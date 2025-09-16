@@ -1,0 +1,2689 @@
+﻿topic,policy_imp,policy_skill
+desc_relation,NA,NA
+desc_relation,Very important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Unable to perform
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Not Important,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Unable to perform
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Unable to perform
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Unable to perform
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Unable to perform
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Unable to perform
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Expert
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Expert
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Expert
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Expert
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Unable to perform
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Expert
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Very important,Unable to perform
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Unable to perform
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Moderately important,Expert
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Very important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,Not Important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Very important,Expert
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Not Important,NA
+desc_relation,Not Important,NA
+desc_relation,NA,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Unable to perform
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Moderately important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Not Important,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Very important,Expert
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,NA,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,NA,NA
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Somewhat important,NA
+desc_relation,Not Important,NA
+desc_relation,Very important,Beginner
+desc_relation,Very important,Beginner
+desc_relation,Moderately important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Not Important,NA
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Somewhat important,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Proficient
+desc_relation,Moderately important,Beginner
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Proficient
+desc_relation,Somewhat important,NA
+desc_relation,Very important,Beginner
+desc_relation,Very important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,Very important,Beginner
+desc_relation,Very important,Beginner
+desc_relation,Very important,Proficient
+desc_relation,NA,NA
+desc_relation,Moderately important,Proficient
+desc_relation,Not Important,NA
+desc_relation,Very important,Expert
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Not Important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,Very important,Expert
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,Moderately important,Unable to perform
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,Very important,Beginner
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Expert
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Not Important,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,Very important,Proficient
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Unable to perform
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Not Important,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,Moderately important,Beginner
+exam_feasible,Moderately important,Unable to perform
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,Moderately important,Beginner
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Beginner
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Expert
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Somewhat important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Very important,Beginner
+exam_feasible,NA,NA
+exam_feasible,Very important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Moderately important,Proficient
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,Not Important,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+exam_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Moderately important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Beginner
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Not Important,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Somewhat important,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Moderately important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Beginner
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Expert
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Beginner
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Moderately important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Moderately important,Beginner
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Moderately important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Moderately important,Beginner
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Beginner
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Proficient
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,Very important,Expert
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+determin_feasible,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Not Important,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Unable to perform
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Unable to perform
+collect_inform,Very important,Unable to perform
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Unable to perform
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Very important,Expert
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Not Important,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Unable to perform
+collect_inform,Very important,Beginner
+collect_inform,Very important,Expert
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Very important,Expert
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Expert
+collect_inform,Not Important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Beginner
+collect_inform,Very important,Unable to perform
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Unable to perform
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Beginner
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Moderately important,Expert
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Not Important,NA
+collect_inform,Not Important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Very important,Expert
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,Not Important,NA
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Unable to perform
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Proficient
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,NA,NA
+collect_inform,Somewhat important,NA
+collect_inform,Not Important,NA
+collect_inform,Very important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Very important,Proficient
+collect_inform,Very important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Not Important,NA
+collect_inform,NA,NA
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Proficient
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Beginner
+collect_inform,Somewhat important,NA
+collect_inform,Very important,Proficient
+collect_inform,Somewhat important,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Moderately important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,Very important,Beginner
+collect_inform,Very important,Beginner
+collect_inform,Very important,Proficient
+collect_inform,NA,NA
+collect_inform,Moderately important,Beginner
+collect_inform,Not Important,NA
+collect_inform,Very important,Expert
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Not Important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Unable to perform
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,Very important,Beginner
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Expert
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Not Important,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Not Important,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Unable to perform
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,Not Important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Unable to perform
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Not Important,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,Moderately important,Unable to perform
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Expert
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Somewhat important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Beginner
+id_assess_opts,NA,NA
+id_assess_opts,Moderately important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Very important,Proficient
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,Not Important,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+id_assess_opts,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Not Important,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Somewhat important,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Somewhat important,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Expert
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Somewhat important,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Moderately important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Beginner
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,Very important,Proficient
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
+prior_influ,NA,NA
