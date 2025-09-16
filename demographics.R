@@ -1,22 +1,12 @@
 
 
-data <- read.csv(file = here("_data/demographics.csv"))
 
-unique(data$supervisor_status)
 
-data_cleaned <- data %>%
-  mutate(
-    sup_status = case_when(
-      supervisor_status = str_starts(supervisor_status, "Supervisor") ~ "Supervisor", 
-      supervisor_status = str_starts(supervisor_status, "Non-supervisor") ~ "Non-supervisor", 
-      supervisor_status = str_starts(supervisor_status, "Executive") ~ "Executive", 
-      TRUE ~ NA_character_
-    ),
-    
-    sup_status_recat = if_else(sup_status == "Non-supervisor", "Non-supervisor", "Supervisor/Executive"),
-    retire_recat = if_else(str_starts(Retirement_year, "I am"), "after 2030", "before 2030")
-    
-  )
+
+# Bring in demogrpahic data
+data <- read.csv(file = here("_data/demographics.csv")) 
+data_cleaned <- clean_raw_data(data)
+
 
 retire_sum_region <- data_cleaned %>%
   group_by(region, retire_recat) %>%

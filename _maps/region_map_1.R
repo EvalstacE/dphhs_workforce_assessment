@@ -2,14 +2,6 @@ mt <- all_sf$MT_boundary
 counties <- all_sf$MT_counties
 
 regions <- all_sf$ampho_regions %>%
-  mutate(
-    region_color_cat = case_when(
-      NAME %in% c("Region 1", "Region 2") ~ "Region 1 and 2", 
-      NAME %in% c("Region 4", "Region 5") ~ "Region 4 and 5", 
-      NAME == "Region 3" ~ "Region 3", 
-      TRUE ~ NA_character_
-    )
-  ) %>% 
   st_make_valid() 
 
 custom_colors1 <- c("#1d376c", "#4e79d2", "#8db7e1")
