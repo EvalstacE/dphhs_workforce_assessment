@@ -1,7 +1,9 @@
 
 clean_raw_data <- function(df) {
   df %>%
-    mutate(
+  recat_degree(Degrees) %>%
+    
+  mutate(
       sup_status = case_when(
         str_starts(supervisor_status, "Supervisor") ~ "Supervisor", 
         str_starts(supervisor_status, "Non-supervisor") ~ "Non-supervisor", 
@@ -19,43 +21,69 @@ clean_raw_data <- function(df) {
         "before 2030"
       ),
       
-      leave_retire_recat = case_when(
-        retire_recat == "before 2030" | leaving_plans == "Retire" | 
-                          !is.na(leaving_plans) ~ "Retiring or leaving",
-        TRUE ~ "not leaving"
+      leave_or_retire = case_when(
+        retire_recat == "before 2030" | leaving_plans == "Retire" ~ "retiring",
+        retire_recat == "after 2030" & considering_leaving == "Yes" & leaving_plans != "Retire" ~ "leaving not retiring",
+        TRUE ~ "not leaving or retiring"
 
       ),
       
-      leave_not_retire = 
-        case_when(
-            retire_recat == "after 2030" & 
-              considering_leaving == "Yes" & 
-                leaving_plans != "Retire"  ~ "Leaving not retiring",
+      
+      burnout_recat = case_when(
+        burnout == "I have no symptoms of burnout" ~ "None", 
+        burnout == "I have one or more symptoms of burnout that come and go away" ~ "Some", 
+        
+        burnout %in% c( "I have one or more symptoms of burnout that won't go away",
+                        "I am completely burnt out, my symptoms won't go away") ~ "Chronic or Complete",
+
         TRUE ~ NA_character_
         
       ),
       
+      across(
+        .cols = starts_with("s_"),
+        .fns = recode_agree,
+        .names = "{.col}_recat"
+      ),
+      
+      
+      across(
+        .cols = starts_with("f_"),
+        .fns = recode_freq,
+        .names = "{.col}_recat"
+      ),
+
       
       region_color_cat = case_when(
         region %in% c("Region 1", "Region 2") ~ "Region 1 and 2", 
         region %in% c("Region 4", "Region 5") ~ "Region 4 and 5", 
         region== "Region 3" ~ "Region 3", 
         TRUE ~ NA_character_
-      )
-    ) %>%
-    
-    recat_degree(Degrees) %>%
-    
-    mutate(
+      ),
+      
       degree_recat = case_when(
         highest_degree %in% c("Bachelors", "Masters or higher") ~ "Bachelors or higher", 
         TRUE ~ "less than Bachelors"),
+      
       age = case_when(
         age == 1968 ~ 57, 
         age < 18 ~ NA_integer_, 
         TRUE ~ age
       ),
-      age_group = create_age_group(age)
+      
+      age_group = create_age_group(age),
+      age_group_lg = create_age_group_lg(age),
+      
+      max_yrs = calc_max_yrs(current_yrs,
+                              agency_yrs,
+                              ph_practice_yrs,
+                             ph_mangmt_yrs)
+      
+      
+    ) %>%
+    
+    mutate(
+      max_yrs_cat =  create_yrs_cat(max_yrs)
     )
   
 }

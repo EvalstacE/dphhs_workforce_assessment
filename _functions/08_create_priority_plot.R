@@ -17,8 +17,7 @@ p <-
     geom_vline(xintercept = x_thr, linetype = "dashed", alpha = 0.5) +
   
   geom_point(size = 16, 
-             color = "black",
-             position = position_jitter(width = 0.01, height = 0.01) 
+             color = "black"
           ) +
     geom_point(size = 15, 
                alpha = 0.9, 

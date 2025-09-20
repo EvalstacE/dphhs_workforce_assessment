@@ -66,15 +66,25 @@ sup_sum <- data_cleaned %>%
 
 age_sum_all <- data_cleaned %>%
   group_by(age_group) %>%
-  summarise(n = n())
+  summarise(n = n(),
+            prop = 100*n/448)
 
-age_sum_position <- data_cleaned %>%
-  group_by(sup_status_recat, age_group) %>%
-    summarise(age_n = n()) %>% ungroup() %>%
-  group_by(sup_status_recat) %>%
-    mutate(sup_n = sum(age_n)) %>% ungroup()%>%
-  group_by(sup_status_recat, sup_n , age_group) %>%
-    summarise(prop_age_n = 100*age_n/sup_n) %>% ungroup()
 
+age_sum_position <- 
+  two_group_count_prop(data_cleaned, 
+                        group1 = supervisor_status, 
+                        group2 = age_group_lg)
+
+age_sum_stats_position <- data_cleaned %>%
+  group_by(supervisor_status) %>%
+  summarise(med_age = median(age, na.rm = TRUE),
+            max_age = max(age, na.rm = TRUE), 
+            min_age = min(age, na.rm = TRUE),
+            IQR_age = IQR(age, na.rm = TRUE))
+
+age_sum_agency <- 
+  two_group_count_prop(data_cleaned, 
+                       group1 = agency, 
+                       group2 = age_group)
 
 

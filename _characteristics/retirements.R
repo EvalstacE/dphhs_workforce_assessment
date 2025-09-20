@@ -1,16 +1,23 @@
-retire_sum_region <- data_cleaned %>%
-  group_by(region, retire_recat) %>%
-  summarise(
-    total_retire = n()
-  ) %>% ungroup() %>%
-  group_by(region) %>%
-  mutate(total_region = sum(total_retire), 
-         retire_prop = 100*total_retire / total_region) %>%
-  ungroup() %>%
-  filter(retire_recat == "before 2030") %>%
-  select(-retire_recat)
 
 
+retire_region <- 
+  two_group_count_prop(data_cleaned, 
+                       group1 = region, 
+                       group2 = retire_recat)
+
+
+retire_leave_region <- 
+  two_group_count_prop(data_cleaned, 
+                       group1 = region, 
+                       group2 = leave_retire_recat)
+
+
+
+retire_or_leave_position <- 
+  two_group_count_prop(data_cleaned, 
+                       group1 = sup_status, 
+                       group2 = leave_or_retire) 
+  
 
 
 retire_sum_all <- data_cleaned %>%
