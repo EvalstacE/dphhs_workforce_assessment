@@ -65,7 +65,7 @@ sup_sum <- data_cleaned %>%
 ##################################
 
 age_sum_all <- data_cleaned %>%
-  group_by(age_group) %>%
+  group_by(age_group_lg) %>%
   summarise(n = n(),
             prop = 100*n/448)
 
@@ -85,6 +85,6 @@ age_sum_stats_position <- data_cleaned %>%
 age_sum_agency <- 
   two_group_count_prop(data_cleaned, 
                        group1 = agency, 
-                       group2 = age_group)
+                       group2 = age_group_lg)
 
 

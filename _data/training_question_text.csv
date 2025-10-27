@@ -1,0 +1,73 @@
+﻿section,skill_cat,question_id,question_text
+SecA,Effective communication,SecA1,"Effectively target communications to different audiences (e.g., the public, community organizations, external partners, the scientific community, etc.)"
+SecA,Effective communication,SecA2,"Communicate in a way that different audiences (e.g., the public, community organizations, external partners, the scientific community, etc.) can understand"
+SecA,Effective communication,SecA3,Communicate in a way that persuades others to act
+SecB,Data-based decision making,SecB1,"Identify appropriate sources of data and information to assess the health of a community (e.g. MT DPHHS reports, CDC reports, Headwaters Economic Reports, Community Health Survey data, and American Community Survey data)"
+SecB,Data-based decision making,SecB2,Ensure the use of appropriate sources of data and information to assess the health of a community
+SecB,Data-based decision making,SecB3,Collect valid data for use in decision making
+SecB,Data-based decision making,SecB4,Use valid data to drive decision making
+SecB,Data-based decision making,SecB5,Identify evidence-based approaches to address public health issues
+SecB,Data-based decision making,SecB6,Apply evidence-based approaches to address public health issues
+SecB,Data-based decision making,SecB7,Ensure the application of evidence-based approaches to address public health issues
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC1,"Describe the value of a diverse public health workforce (e.g., diverse in terms of race, ethnicity, gender, age, sexual orientation)"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC2,"Support development of a diverse public health workforce (e.g., diverse in terms of race, ethnicity, gender, age, sexual orientation)"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC3,"Develop a diverse public health workforce (e.g., diverse in terms of race, ethnicity, gender, age, sexual orientation)"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC4,"Support inclusion of health equity and social justice principles into planning for program and service delivery (e.g., include health equity in a strategic plan, promote health-in-all-policies, engage marginalized and under-resourced communities in decision making)"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC5,"Incorporate health equity and social justice principles into planning for programs and services (e.g., include health equity in a strategic plan, promote health-in-all-policies, engage marginalized and under-resourced communities in decision making)"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC6,"Incorporate health equity and social justice principles into planning across the agency (e.g., include health equity in a strategic plan, promote health-in-all-policies, engage marginalized and under-resourced communities in decision making)"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC7,"Deliver socially, culturally, and linguistically appropriate programs and customer service"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC8,"Implement socially, culturally, and linguistically appropriate policies, programs, and services that reflect the diversity of individuals and populations in a community"
+SecC,"Justice, Equity, Diversity, and Inclusion",SecC9,"Ensure the implementation of socially, culturally, and linguistically appropriate policies, programs, and services that reflect the diversity of individuals and populations in a community"
+SecD,Budget & Financial Management,SecD1,Describe financial analysis methods applicable to program and service delivery
+SecD,Budget & Financial Management,SecD2,Use financial analysis methods in managing programs and services
+SecD,Budget & Financial Management,SecD3,Use financial analysis methods in making decisions about programs and services across the agency
+SecD,Budget & Financial Management,SecD4,"Describe how public health funding mechanisms support agency programs and services (e.g., categorical grants, state general funds, fees, third-party reimbursement, tobacco taxes)"
+SecD,Budget & Financial Management,SecD5,"Identify funding mechanisms and procedures to develop sustainable funding models for programs and services (e.g., categorical grants, state general funds, fees, third-party reimbursement, tobacco taxes, value-based purchasing, budget approval process)"
+SecD,Budget & Financial Management,SecD6,"Leverage funding mechanisms and procedures to develop sustainable funding models for the agency (e.g., categorical grants, state general funds, fees, third-party reimbursement, tobacco taxes, value-based purchasing, budget approval process)"
+SecD,Budget & Financial Management,SecD7,"Describe the value of an agency business plan (e.g., tool for analyzing and planning for a product or service that will meet a community need, will generate revenue, and be sustainable)"
+SecD,Budget & Financial Management,SecD8,"Implement a business plan for agency programs and services (e.g., tool for analyzing and planning for a product or service that will meet a community need, will generate revenue, and be sustainable)"
+SecD,Budget & Financial Management,SecD9,"Design a business plan for the agency (e.g., tool for analyzing and planning for a product or service that will meet a community need, will generate revenue, and be sustainable)"
+SecD,Budget & Financial Management,SecD10,"Demonstrates the ability to bill for public health services accurately and effectively, while understanding and utilizing revenue generation sources to support and sustain departmental operations."
+SecE,Change Management,SecE1,"Describe the influence of internal changes (e.g., personnel changes, funding cuts, internal policies, etc.) on organizational practices"
+SecE,Change Management,SecE2,"Modify programmatic practices in consideration of internal and external changes (e.g., social, political, economic, scientific)"
+SecE,Change Management,SecE3,"Manage organizational change in response to evolving internal and external circumstances (e.g., social, political, economic, scientific)"
+SecE,Change Management,SecE4,"Assess the external drivers in your environment (e.g., physical, political, social, fiscal, etc.) that may influence your work"
+SecE,Change Management,SecE5,"Assess the drivers in your environment (e.g., physical, political, social, fiscal, etc.) that may influence public health programs and services"
+SecE,Change Management,SecE6,"Assess the drivers in your environment (e.g., physical, political, social, fiscal, etc.) that may influence public health programs and services across the agency"
+SecF,Systems & Strategic Thinking,SecF1,"Integrate current and projected trends (e.g., physical, political, social, fiscal, etc.) into strategic planning for programs and services"
+SecF,Systems & Strategic Thinking,SecF2,"Integrate current and projected trends (e.g., physical, political, social, fiscal, etc.) into organizational strategic planning"
+SecF,Systems & Strategic Thinking,SecF3,"Describe how social determinants of health impact the health of individuals, families, and the overall community"
+SecF,Systems & Strategic Thinking,SecF4,"Build cross-sector partnerships (e.g., agencies or organizations supporting transportation, housing, education, and law enforcement) to address social determinants of health"
+SecF,Systems & Strategic Thinking,SecF5,"Influence policies external to the organization that address social determinants of health (e.g., zoning, transportation routes, etc.)"
+SecF,Systems & Strategic Thinking,SecF6,"Participate in quality improvement processes (e.g., Plan-Do-Check-Act, SWOT analysis, fishbone, lean, kaizen, etc.) for agency programs and services"
+SecF,Systems & Strategic Thinking,SecF7,"Apply quality improvement processes (e.g., Plan-Do-Check-Act, SWOT analysis, fishbone, lean, kaizen, etc.) to improve agency programs and services"
+SecF,Systems & Strategic Thinking,SecF8,"Create a culture of quality improvement (e.g., an integrative process that links knowledge, structures, processes, and outcomes to enhance quality throughout an organization) at the agency or division level"
+SecF,Systems & Strategic Thinking,SecF9,"Describe your agency’s strategic priorities, mission, and vision"
+SecF,Systems & Strategic Thinking,SecF10,Implement an organizational strategic plan
+SecF,Systems & Strategic Thinking,SecF11,Ensure the successful implementation of an organizational strategic plan
+SecF,Systems & Strategic Thinking,SecF12,Understands the Foundational Public Health Services (FPHS) and how their role contributes to and supports the broader public health system.
+SecF,Systems & Strategic Thinking,SecF13,"Effectively communicates how staff work aligns with the Foundational Public Health Services (FPHS) and the broader public health system, and actively encourages staff to integrate and align their efforts with these foundational areas and capabilities."
+SecF,Systems & Strategic Thinking,SecF14,"Demonstrates the expertise and knowledge necessary to effectively interpret and apply public health statutes in interactions with governing bodies or boards of health, using clear communication strategies to inform decision-making, ensure statutory compliance, and build public trust."
+SecG,Community Engagement,SecG1,Describe the value of community strategic planning that results in a community health assessment or community health improvement plan
+SecG,Community Engagement,SecG2,Apply findings from a community health assessment or community health improvement plan to agency programs and services
+SecG,Community Engagement,SecG3,Ensure health department representation in a collaborative process resulting in a community health assessment or community health improvement plan
+SecG,Community Engagement,SecG4,Describe the importance of engaging community members in the design and implementation of programs to improve health in a community
+SecG,Community Engagement,SecG5,Engage community members in the design and implementation of programs to improve health in a community
+SecG,Community Engagement,SecG6,Ensure community member engagement in the design and implementation of programs to improve health in a community
+SecG,Community Engagement,SecG7,Describe your role in improving the health of the community served by the agency
+SecG,Community Engagement,SecG8,"Assess how agency policies, programs, and services advance population health"
+SecG,Community Engagement,SecG9,Advocate for needed population health services and programs
+SecH,Cross-Sectional Partnerships,SecH1,"Engage community assets and resources (e.g., Boys & Girls Clubs, public libraries, hospitals, faith-based organizations, academic institutions, federal grants, fellowship programs) to improve health in a community"
+SecH,Cross-Sectional Partnerships,SecH2,"Identify and engage assets and resources (e.g., Boys & Girls Clubs, public libraries, hospitals, faith-based organizations, academic institutions, federal grants, fellowship programs) that can be used to improve health in a community"
+SecH,Cross-Sectional Partnerships,SecH3,"Negotiate with multiple partners for the use of assets and resources (e.g., Boys & Girls Clubs, public libraries, hospitals, faith-based organizations, academic institutions, federal grants, fellowship programs) to improve health in a community"
+SecH,Cross-Sectional Partnerships,SecH4,Collaborate with public health personnel across the agency to improve the health of the community
+SecH,Cross-Sectional Partnerships,SecH5,"Engage in collaborations within the public health system, including traditional and non-traditional partners, to improve the health of a community."
+SecH,Cross-Sectional Partnerships,SecH6,Build collaborations within the public health system among traditional and non-traditional partners to improve the health of a community
+SecI,Policy Engagement,SecI1,Describe the relationship between a policy and many types of public health problems.
+SecI,Policy Engagement,SecI2,"Examine the feasibility (e.g., fiscal, social, political, legal, geographic) of a policy and its relationship to many types of public health problems"
+SecI,Policy Engagement,SecI3,"Determine the feasibility (e.g., fiscal, social, political, legal, geographic) of a policy and its relationship to many types of public health problems."
+SecI,Policy Engagement,SecI4,"Collect and summarize information to inform the development of policies external to the organization that affect the health of the community (e.g., transportation routes, earned sick leave, tobacco 21, affordable housing/inclusionary zoning, complete streets, healthy food procurement)"
+SecI,Policy Engagement,SecI5,"Identify and assess options for policies external to the organization that affect the health of the community (e.g., transportation routes, earned sick leave, tobacco 21, affordable housing/inclusionary zoning, complete streets, healthy food procurement)"
+SecI,Policy Engagement,SecI6,"Prioritize and influence policies external to the organization that affect the health of the community (e.g., transportation routes, earned sick leave, tobacco 21, affordable housing/inclusionary zoning, complete streets, healthy food procurement"
+SecJ,Programmatic Expertise,SecJ1,Content knowledge specific to my programmatic area
+SecJ,Programmatic Expertise,SecJ2,Technical skills specific to my programmatic area

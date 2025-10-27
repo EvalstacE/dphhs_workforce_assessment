@@ -1,7 +1,7 @@
 
 recat_cols <- function(data, imp_col, skill_col) {
-  imp_col   <- ensym(imp_col)   # works with bare or "string"
-  skill_col <- ensym(skill_col) # works with bare or "string"
+  imp_col   <- ensym(imp_col)   
+  skill_col <- ensym(skill_col) 
   
   data %>%
     mutate(
@@ -19,6 +19,7 @@ recat_cols <- function(data, imp_col, skill_col) {
         .skill %in% c("proficient", "expert") ~ "Proficient/Expert",
         TRUE ~ NA_character_
       )
+      
     ) %>%
     select(-.imp, -.skill)
 }

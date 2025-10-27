@@ -4,7 +4,7 @@ calc_imp_prop <- function(df) {
   
   df %>%
     dplyr::count(
-      domain, supervisor_status, section, question_id, topic, imp_recat,
+      domain, supervisor_status, section, question_id, topic, question_text, imp_recat,
       name = "imp_n"
     ) %>%
     dplyr::mutate(
@@ -20,7 +20,7 @@ calc_skill_prop <- function(df) {
   imp_denoms <- calc_imp_prop(df) %>%
     dplyr::filter(imp_recat == "Moderately/Very Important") %>%
     dplyr::select(
-      domain, supervisor_status, section, question_id, topic,
+      domain, supervisor_status, section, question_id, topic, question_text,
       imp_n, imp_prop
     )
   
@@ -28,14 +28,14 @@ calc_skill_prop <- function(df) {
   skill_counts <- df %>%
     dplyr::filter(imp_recat == "Moderately/Very Important") %>%
     dplyr::count(
-      domain, supervisor_status, section, question_id, topic, skill_recat,
+      domain, supervisor_status, section, question_id, topic, question_text, skill_recat,
       name = "skill_n"
     )
   
   skill_counts %>%
     dplyr::left_join(
       imp_denoms,
-      by = c("domain","supervisor_status","section","question_id","topic")
+      by = c("domain","supervisor_status","section","question_id","topic", "question_text")
     ) %>%
     dplyr::mutate(
       imp_recat  = "Moderately/Very Important",
@@ -45,14 +45,7 @@ calc_skill_prop <- function(df) {
     dplyr::arrange(section, question_id) %>%
     
     mutate(
-      priority_score = imp_prop * skill_prop,
-      priority_cat = case_when(
-        imp_prop >= 70 & skill_prop >= 40 ~ "Highest Priority", 
-        imp_prop >= 70 & skill_prop >= 20 & skill_prop < 40 ~ "Second Priority", 
-        TRUE ~ "Lower Priority"
-      ),
-      priority_cat = factor(priority_cat, levels = c("Highest Priority", 
-                            "Second Priority", "Lower Priority"))
+      priority_score = imp_prop * skill_prop / 100
     )
 }
 

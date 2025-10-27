@@ -4,10 +4,12 @@ pacman::p_load(
   dplyr, tidyr, ggplot2, lubridate, ggthemes, cowplot, readr, rlang,
   classInt, tidycensus, sf, here, stringr, purrr, svglite, rmapshaper,
   scales, ggrepel, viridis, RColorBrewer, maps, ggfx, glue, rlang, tidyselect,
-  forcats
+  forcats, ggnewscale
 )
 
 
+
+color_scale <- c("#95c6ea", "#3e5c58","#fcd008", "#a8b09d")
 
 # Load global functions 
 global_function_files <- list.files("_functions/", 

@@ -18,8 +18,8 @@ create_age_group <- function(age_col) {
 # === create age group category 2 (bigger groupings) === #
 create_age_group_lg <- function(age_col) {
   case_when(
-    between(age_col, 18, 44) ~ "18-44",
-    between(age_col, 45, 54) ~ "35-54", 
+    between(age_col, 18, 34) ~ "18-34",
+    between(age_col, 35, 54) ~ "35-54", 
     between(age_col, 55, 200) ~ "55+",
     TRUE ~ "Unknown"
   )
