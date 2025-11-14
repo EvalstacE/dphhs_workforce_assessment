@@ -5,32 +5,68 @@
 summarise_satisfy_props <- function(data, group,
                                     prefix = "s_",
                                     suffix = "_recat",
-                                    level  = "Agree") {
+                                    levels = c("Agree", "Strongly agree")) {
   g <- enquo(group)
-  g_name <- quo_name(g)
   pat <- paste0("^", prefix, ".*", suffix, "$")
-  
-  # safe col name: lowercased, underscores for spaces
-  level_clean <- str_replace_all(str_to_lower(level), "\\s+", "_")
-  prop_col    <- paste0("prop_", level_clean)
-  
-  # total per group (denominator)
-  group_totals <- data %>%
-    group_by(!!g) %>%
-    summarise(group_total = n(), .groups = "drop")
   
   data %>%
     pivot_longer(
       cols = matches(pat),
-      names_to = "category",
+      names_to = "question",
       values_to = "resp"
     ) %>%
     filter(!is.na(resp)) %>%
-    group_by(!!g, category) %>%
-    summarise(count_level = sum(resp == level), .groups = "drop") %>%
-    left_join(group_totals, by = g_name) %>%
-    mutate(!!prop_col := 100 * count_level / group_total)
+    mutate(agree = resp %in% levels) %>%
+    group_by(!!g, question) %>%
+    summarise(
+      prop_agree = mean(agree),
+      n = n(),
+      sd_agree = sd(as.numeric(agree)),       # robust SD
+      se = sd_agree / sqrt(n),                # robust SE
+      ci_lower = prop_agree - 1.96 * se,
+      ci_upper = prop_agree + 1.96 * se,
+      .groups = "drop"
+    ) %>%
+    mutate(across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100))
+           
 }
+
+
+
+summ_agree_overall <- function(data, group,
+                          prefix = "s_",
+                          suffix = "_recat",
+                          levels = c("Agree", "Strongly agree")) {
+  g <- enquo(group)
+  g_name <- quo_name(g)
+  pat <- paste0("^", prefix, ".*", suffix, "$")
+  
+  data %>%
+    mutate(id = 1:nrow(data)) %>%
+    pivot_longer(
+      cols = matches(pat),
+      names_to = "question",
+      values_to = "resp"
+    ) %>%
+    filter(!is.na(resp)) %>%
+    mutate(agree_binary = resp %in% levels) %>%
+    group_by(id, !!g) %>%  # group by person and agency
+    summarise(person_agree_rate = mean(agree_binary), .groups = "drop") %>%
+    group_by(!!g) %>%
+    summarise(
+      n_staff = n(),
+      prop_agree = mean(person_agree_rate), 
+      sd_agree = sd(person_agree_rate),
+      se = sd_agree / sqrt(n_staff),
+      ci_lower = prop_agree - 1.96 * se,
+      ci_upper = prop_agree + 1.96 * se,
+      .groups = "drop"
+    )
+}
+
+
+
+
 
 
 #######################################################################
@@ -39,41 +75,39 @@ summarise_satisfy_props <- function(data, group,
 #######################################################################
 
 summarise_freq_props <- function(data, group,
-                                      prefix = "f_", suffix = "_recat",
-                                      lab_rare  = "Rarely/Never",
-                                      lab_sometimes = "Sometimes",
-                                      lab_usual = "Usually/Always") {
-  g <- enquo(group)
-  g_name <- quo_name(g)
+                                 prefix = "f_", suffix = "_recat",
+                                 lab_rare      = "Rarely/Never",
+                                 lab_sometimes = "Sometimes",
+                                 lab_usual     = "Usually/Always") {
+  g   <- enquo(group)
   pat <- paste0("^", prefix, ".*", suffix, "$")
   
-  # fixed denominator per group (includes NAs)
-  group_totals <- data %>%
-    group_by(!!g) %>%
-    summarise(group_total = n(), .groups = "drop")
-  
-  data %>%
+data %>%
     pivot_longer(
-      cols = matches(pat),
-      names_to = "category",
+      cols      = matches(pat),
+      names_to  = "question",
       values_to = "resp"
-    ) %>%
-    filter(!is.na(resp)) %>%                    # only count non-missing, denom stays fixed
-    group_by(!!g, category) %>%
-    summarise(
-      count_rare_never   = sum(resp == lab_rare),
-      count_sometimes    = sum(resp == lab_sometimes),
-      count_usually_alwy = sum(resp == lab_usual),
+) %>%
+
+filter(!is.na(resp)) %>%
+mutate(
+      rare_never   = resp == lab_rare,
+      sometimes    = resp == lab_sometimes,
+      usually_alwy = resp == lab_usual
+) %>%
+group_by(!!g, question) %>%
+  summarise(
+      prop_agree = mean(usually_alwy),
+      n = n(),
+      sd_agree = sd(as.numeric(usually_alwy)),
+      # robust SE
+      se = sd_agree / sqrt(n),                
+      ci_lower = prop_agree - 1.96 * se,
+      ci_upper = prop_agree + 1.96 * se,
       .groups = "drop"
-    ) %>%
-    left_join(group_totals, by = g_name) %>%
-    mutate(
-      prop_rare_never      = 100 * count_rare_never   / group_total,
-      prop_sometimes       = 100 * count_sometimes    / group_total,
-      prop_usually_always  = 100 * count_usually_alwy / group_total
-    ) %>%
-    select(!!g, category,
-           prop_rare_never, prop_sometimes, prop_usually_always)
+) %>%
+  mutate(across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100))
 }
+
 
 

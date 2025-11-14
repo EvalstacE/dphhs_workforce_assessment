@@ -1,0 +1,11 @@
+"Domain","mean_rank","median_rank","in_top_3"
+"SSbudget",2.25,1,12
+"SSpolicy",2.9375,2,13
+"SSsystems",4.5,4,7
+"SScomm",5.0625,6,6
+"SSengage",5.375,5,2
+"SSchange",5.75,4.5,4
+"SSdata",6.1875,6.5,2
+"SSjedi",6.75,7,1
+"SSpartners",7.5625,8,0
+"SSexpertise",8.625,9.5,1

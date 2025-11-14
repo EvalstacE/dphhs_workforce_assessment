@@ -4,6 +4,9 @@ clean_raw_data <- function(df) {
   recat_degree(Degrees) %>%
     
   mutate(
+    
+      size = factor(size, levels = c("Tribal", "Frontier", "Small", "Medium", "Large"), ordered = TRUE),
+      
       sup_status = case_when(
         str_starts(supervisor_status, "Supervisor") ~ "Supervisor", 
         str_starts(supervisor_status, "Non-supervisor") ~ "Non-supervisor", 
