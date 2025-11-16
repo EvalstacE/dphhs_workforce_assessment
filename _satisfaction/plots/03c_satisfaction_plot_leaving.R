@@ -1,19 +1,16 @@
 
 
 
+
+
 s_leave_p1 <- satisfaction_leave %>% 
-  filter(cat_group %in% c("treated fairly", "belonging", "job", 
-                          "pay & benefits", "team", "org")) %>% 
-  filter(diff_leaving >= 15) %>%
-  mutate(
-    leave_or_retire = 
-      factor(leave_or_retire, 
-             levels = c("not leaving or retiring", "leaving not retiring"), 
-             ordered = TRUE
-             )
-    )
-
-
+  filter(
+    !cat_group %in% c("job", "org"),
+    !question %in% c("s_belonging_work_unit_recat", "s_work_unit_recat")
+  ) %>%
+  group_by(leave_or_retire) %>%
+  arrange(desc(diff_leaving)) %>%
+  slice_head(n=5)
 
 
 
@@ -21,7 +18,27 @@ s_leave_p1 <- satisfaction_leave %>%
 satisfaction_leave_p1 <- 
   
 ggplot() + 
-
+geom_col(
+    data = s_leave_p1,
+    aes(
+      x = question,
+      y = prop_agree,
+      fill = leave_or_retire
+    ),
+    position = "dodge"
+) + 
+  
+facet_wrap(~question, nrow = 1) + 
+  
+theme_classic() +
+theme(
+    panel.spacing = unit(0, "pt"),   
+    strip.background = element_blank(),  
+    strip.placement = "inside",
+    strip.text = element_blank(),
+    axis.text.x = element_blank(), 
+    legend.position = "none"
+) 
   
   
   

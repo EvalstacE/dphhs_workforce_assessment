@@ -6,30 +6,47 @@ summarise_satisfy_props <- function(data, group,
                                     prefix = "s_",
                                     suffix = "_recat",
                                     levels = c("Agree", "Strongly agree")) {
-  g <- enquo(group)
+  
   pat <- paste0("^", prefix, ".*", suffix, "$")
   
-  data %>%
-    pivot_longer(
-      cols = matches(pat),
-      names_to = "question",
+  df <- data %>%
+    tidyr::pivot_longer(
+      cols      = dplyr::matches(pat),
+      names_to  = "question",
       values_to = "resp"
     ) %>%
-    filter(!is.na(resp)) %>%
-    mutate(agree = resp %in% levels) %>%
-    group_by(!!g, question) %>%
-    summarise(
+    dplyr::filter(!is.na(resp)) %>%
+    dplyr::mutate(agree = resp %in% levels)
+  
+  # --- grouped vs ungrouped ---
+  if (missing(group)) {
+    grouped <- df %>%
+      dplyr::group_by(question)
+  } else {
+    grouped <- df %>%
+      dplyr::group_by({{ group }}, question)
+  }
+  
+  grouped %>%
+    dplyr::summarise(
       prop_agree = mean(agree),
-      n = n(),
-      sd_agree = sd(as.numeric(agree)),       # robust SD
-      se = sd_agree / sqrt(n),                # robust SE
-      ci_lower = prop_agree - 1.96 * se,
-      ci_upper = prop_agree + 1.96 * se,
-      .groups = "drop"
+      n          = dplyr::n(),
+      sd_agree   = stats::sd(as.numeric(agree)),
+      se         = sd_agree / sqrt(n),
+      ci_lower   = prop_agree - 1.96 * se,
+      ci_upper   = prop_agree + 1.96 * se,
+      .groups    = "drop"
     ) %>%
-    mutate(across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100))
-           
+    dplyr::mutate(
+      dplyr::across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100),
+      n_agree = round(prop_agree * (n / 100))
+    ) %>%
+    dplyr::relocate(n_agree, .after = "n")
 }
+
+
+
+
 
 
 
@@ -55,7 +72,7 @@ summ_agree_overall <- function(data, group,
     group_by(!!g) %>%
     summarise(
       n_staff = n(),
-      prop_agree = mean(person_agree_rate), 
+      prop_agree = mean(person_agree_rate),
       sd_agree = sd(person_agree_rate),
       se = sd_agree / sqrt(n_staff),
       ci_lower = prop_agree - 1.96 * se,
@@ -79,35 +96,43 @@ summarise_freq_props <- function(data, group,
                                  lab_rare      = "Rarely/Never",
                                  lab_sometimes = "Sometimes",
                                  lab_usual     = "Usually/Always") {
-  g   <- enquo(group)
+  
   pat <- paste0("^", prefix, ".*", suffix, "$")
   
-data %>%
-    pivot_longer(
-      cols      = matches(pat),
+  df <- data %>%
+    tidyr::pivot_longer(
+      cols      = dplyr::matches(pat),
       names_to  = "question",
       values_to = "resp"
-) %>%
-
-filter(!is.na(resp)) %>%
-mutate(
+    ) %>%
+    dplyr::filter(!is.na(resp)) %>%
+    dplyr::mutate(
       rare_never   = resp == lab_rare,
       sometimes    = resp == lab_sometimes,
       usually_alwy = resp == lab_usual
-) %>%
-group_by(!!g, question) %>%
-  summarise(
+    )
+  
+  if (missing(group)) {
+    grouped <- df %>%
+      dplyr::group_by(question)
+  } else {
+    grouped <- df %>%
+      dplyr::group_by({{ group }}, question)
+  }
+  
+  grouped %>%
+    dplyr::summarise(
       prop_agree = mean(usually_alwy),
-      n = n(),
-      sd_agree = sd(as.numeric(usually_alwy)),
-      # robust SE
-      se = sd_agree / sqrt(n),                
-      ci_lower = prop_agree - 1.96 * se,
-      ci_upper = prop_agree + 1.96 * se,
-      .groups = "drop"
-) %>%
-  mutate(across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100))
+      n          = dplyr::n(),
+      sd_agree   = stats::sd(as.numeric(usually_alwy)),
+      se         = sd_agree / sqrt(n),
+      ci_lower   = prop_agree - 1.96 * se,
+      ci_upper   = prop_agree + 1.96 * se,
+      .groups    = "drop"
+    ) %>%
+    dplyr::mutate(
+      dplyr::across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100),
+      n_agree = round(prop_agree * (n / 100))
+    ) %>%
+    dplyr::relocate(n_agree, .after = "n")
 }
-
-
-

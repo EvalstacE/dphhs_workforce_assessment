@@ -13,6 +13,9 @@ clean_raw_data <- function(df) {
         str_starts(supervisor_status, "Executive") ~ "Executive", 
         TRUE ~ NA_character_
       ),
+      
+      sup_status = factor(sup_status, levels = c("Non-supervisor", "Supervisor", "Executive"), ordered = TRUE),
+  
       sup_status_recat = if_else(
         sup_status == "Non-supervisor", 
         "Non-supervisor", 
@@ -55,8 +58,8 @@ clean_raw_data <- function(df) {
         .fns = recode_freq,
         .names = "{.col}_recat"
       ),
-
       
+
       region_color_cat = case_when(
         region %in% c("Region 1", "Region 2") ~ "Region 1 and 2", 
         region %in% c("Region 4", "Region 5") ~ "Region 4 and 5", 
@@ -86,7 +89,13 @@ clean_raw_data <- function(df) {
     ) %>%
     
     mutate(
-      max_yrs_cat =  create_yrs_cat(max_yrs)
+      max_yrs_cat =  create_yrs_cat(max_yrs),
+      
+      satisfied_job = 
+        case_when(
+          s_job_recat == "Agree" ~ "satisfied with job", 
+          TRUE ~ "not satisfied with job"
+        )
     )
   
 }

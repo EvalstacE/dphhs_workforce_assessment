@@ -15,6 +15,7 @@ resp <- read_csv(file = "_data/responses_cnty.csv") %>%
   )
 
 
+
 region_sum <- resp %>%
   group_by(region) %>%
   summarise(

@@ -1,0 +1,23 @@
+﻿q_type,q_short,cat_group,full_text
+f,f_work_life_balance_recat,balance,I can achieve a healthy balance between my work and life outside of work
+f,f_manage_demands_recat,balance,I can easily manage the demands of my job
+s,s_belonging_agency_recat,belonging,I feel a sense of belonging at my agency
+s,s_belonging_work_unit_recat,belonging,I feel a sense of belonging with my program team
+f,f_love_job_recat,job,I love my job
+s,s_job_recat,job,I am satisfied with my job
+f,f_happy_input_recat,org & team,I am happy with how much input I have in decisions that affect my work
+f,f_voice_concerns_recat,org & team,I can voice concerns at work without getting into trouble
+s,s_org_recat,org & team,I am satisfied with my organization
+s,s_work_unit_recat,org & team,I am satisfied with my program team
+f,f_paid_fairly_recat,pay & benefits,I am pair fairly for the job that I do
+s,s_pay_recat,pay & benefits,I am satisfied with my pay
+s,s_benefits_recat,pay & benefits,I am satisfied with my benefits
+s,s_supervisor_recat,supervisor,I am satisfied with my supervisor
+s,s_sup_interpersonal_skills_recat,supervisor,I feel that my supervisor has strong interpersonal skills
+f,f_treated_fairly_recat,treated fairly,I am treated fairly at work
+f,f_psych_safe_recat,treated fairly,I feel psychologically safe at work
+s,s_treated_fair_age_recat,treated fairly,People here are treated fairly regardless of their age
+s,s_treated_fair_race_recat,treated fairly,People here are treated fairly regardless of their race
+s,s_treated_fair_gender_recat,treated fairly,People here are treated fairly regardless of their gender
+s,s_treated_fair_sex_orient_recat,treated fairly,People here are treated fairly regardless of their sexual orientation
+s,s_treated_fair_diability_recat,treated fairly,People here are treated fairly regardless of their disability status
