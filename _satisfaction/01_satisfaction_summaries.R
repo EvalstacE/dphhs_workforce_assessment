@@ -208,7 +208,9 @@ satisfaction_statewide <- rbind(s_props_statewide, f_props_statewide) %>%
   mutate(
     min_prop = min(prop_agree), 
     max_prop = max(prop_agree), 
-    rng_prop = max_prop - min_prop
+    rng_prop = max_prop - min_prop,
+    grouping = "statewide",
+    group_col = "statewide_results"
   ) %>%
   ungroup()
 
@@ -223,7 +225,7 @@ satisfaction_all_grps <-
     satisfaction_leave,
     satisfaction_satisfy
   ) %>%
-  filter(group_col != "not leaving or retiring")
+  filter(group_col != "retiring")
 
 
 

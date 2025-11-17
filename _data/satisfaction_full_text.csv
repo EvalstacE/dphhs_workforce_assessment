@@ -5,8 +5,8 @@ s,s_belonging_agency_recat,belonging,I feel a sense of belonging at my agency
 s,s_belonging_work_unit_recat,belonging,I feel a sense of belonging with my program team
 f,f_love_job_recat,job,I love my job
 s,s_job_recat,job,I am satisfied with my job
-f,f_happy_input_recat,org & team,I am happy with how much input I have in decisions that affect my work
-f,f_voice_concerns_recat,org & team,I can voice concerns at work without getting into trouble
+f,f_happy_input_recat,voice,I am happy with how much input I have in decisions that affect my work
+f,f_voice_concerns_recat,voice,I can voice concerns at work without getting into trouble
 s,s_org_recat,org & team,I am satisfied with my organization
 s,s_work_unit_recat,org & team,I am satisfied with my program team
 f,f_paid_fairly_recat,pay & benefits,I am pair fairly for the job that I do

@@ -76,7 +76,7 @@ geom_point(
     x = prop_agree
     )
 ) +  
-xlim(25,100)+
+xlim(0,100)+
 theme_classic() +
 theme(
     panel.background = element_rect(fill = "transparent", colour = NA),
@@ -129,7 +129,7 @@ geom_line(
   geom_point(
     data = s_p1_min,
     size = 7, 
-    color = "#1f3465",
+    color = "#3e5c58",
     aes(
       y = cat_group, 
       x = prop_agree, 
@@ -140,7 +140,7 @@ geom_line(
     data = s_p1_max,
     size = 8, 
     alpha = 1,
-    color = "#1f3465",
+    color = "#3e5c58",
     aes(
       y = cat_group, 
       x = prop_agree
@@ -150,8 +150,8 @@ geom_line(
   geom_point(
     data = s_p1_max,
     size = 7, 
-    alpha = 0.8,
-    color = "#95c6ea",
+    alpha = 1,
+    color = "#fbd113",
     aes(
       y = cat_group, 
       x = prop_agree, 
@@ -188,41 +188,106 @@ ggplot(satisfaction_agency, aes(x = fct_rev(cat_group), y = prop_agree, fill = c
   )
 
 
+#########################################
+#########################################
+#########################################
+#########################################
 
 
+diff_state_pay <- 
+  diff_vs_state(
+    topic_question =  "s_pay_recat",
+    all_df   = satisfaction_all_grps,
+    state_df = satisfaction_statewide,
+    buffer = 3,
+    exclude_groups = c("not leaving or retiring", "satisfied with job")
+  )
 
 
+diff_input <- 
+  diff_vs_state(
+    topic_question =  "f_happy_input_recat",
+    all_df   = satisfaction_all_grps,
+    state_df = satisfaction_statewide,
+    buffer = 3
+  )
 
-s_position_pay <- satisfaction_position %>%
-  filter(question == "s_pay_recat")
 
-
+####################
+pay_satisfaction_p1 <- 
 ggplot() + 
-  geom_point(
-    data = s_position_pay, 
+# Shaded statewide band
+annotate(
+    "rect",
+    xmin = -Inf, xmax = Inf,
+    ymin = state_lwr, ymax = state_upr,
+    alpha = 0.15, fill = "grey80"
+) +
+
+geom_errorbar(
+    data = all_pay, 
+    width = 0.5,
+    alpha = 0.5,
+    color = "#b4b4b4",
     aes(
-      x = sup_status, 
+      x = group_col, 
       y = prop_agree, 
-      color = sup_status,
-      group = sup_status
-    )
-  ) + 
-  
-  geom_errorbar(
-    data = s_position_pay,
-    width = 0.1,
-    aes(
-      x = sup_status, 
-      y = prop_agree,
       ymin = ci_lower, 
       ymax = ci_upper
-      )
-    ) + 
+    )
+) + 
   
-  ylim(0,100) + 
+geom_point(
+    data = all_pay, 
+    alpha = 0.5,
+    aes(
+      x = group_col, 
+      y = prop_agree, 
+      color = group_col
+    )
+) + 
   
-  theme(
-    axis.text.x = element_blank(),
-    legend.position = "none"
-  ) 
+geom_errorbar(
+    data = diff_state_pay, 
+    width = 0.5,
+    color = "#b4b4b4",
+    aes(
+      x = group_col, 
+      y = prop_agree, 
+      ymin = ci_lower, 
+      ymax = ci_upper
+    )
+  ) +
+  
+geom_point(
+    data = diff_state_pay, 
+    aes(
+      x = group_col, 
+      y = prop_agree, 
+      color = group_col
+    )
+) + 
+  
+facet_wrap(~ grouping, scales = "free_x", nrow = 1)  + 
+  
+theme_classic() +
+theme(
+    legend.position = "none",
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background  = element_rect(fill = "transparent", colour = NA),
+    panel.spacing = unit(0, "lines") 
+)
+
+  
+
+ggsave(
+  filename = here("_www/plot_exports/pay_satisfaction_p1.png"),
+  plot = pay_satisfaction_p1,
+  width = 11,
+  height = 8.5,
+  units = "in",
+  dpi = 900,
+  bg = "transparent"
+  
+)
 
