@@ -1,9 +1,7 @@
 
 
   
-s_p1 <- satisfaction_statewide %>%
-  arrange(rng_prop) %>%
-  mutate(cat_group = fct_reorder(cat_group, min_prop, .desc = TRUE))
+s_p1 <- satisfaction_statewide
 
 s_p1_min <- satisfaction_statewide %>%
   group_by(cat_group) %>%
@@ -21,25 +19,123 @@ s_p1_max <- satisfaction_statewide %>%
 
 
 s_p2 <- satisfaction_all_grps %>%
-  group_by(cat_group) %>%
+  filter(grouping != "job_satisfied") %>%
+  group_by(question) %>%
   slice_min(order_by = prop_agree, n = 2) %>% 
   mutate(min_prop = min(prop_agree)) %>%
-  ungroup()%>%
-  mutate(cat_group = fct_reorder(cat_group, min_prop, .desc = TRUE))
+  ungroup()
 
 
 s_p3 <- satisfaction_all_grps %>%
+  filter(
+    grouping != "job_satisfied",
+    cat_group != "job"
+  ) %>%
   group_by(cat_group) %>%
   slice_min(order_by = prop_agree, n = 3) %>% 
   mutate(min_prop = min(prop_agree)) %>%
-  ungroup()%>%
-  mutate(cat_group = fct_reorder(cat_group, min_prop, .desc = TRUE))
+  ungroup()
+
 
 
 ggplot() + 
   
-geom_point(
-    data = s_p3,
+  geom_line(
+    data = s_p1,
+    alpha = 0.5,
+    color = "#b4b4b4",
+    aes(
+      y = forcats::fct_rev(question),
+      x = prop_agree
+    )
+  )+  
+  
+  geom_point(
+    data = s_p1,
+    size = 6, 
+    alpha = 0.5,
+    color = "black",
+    aes(
+      y = forcats::fct_rev(question),
+      x = prop_agree
+    )
+  ) + 
+  
+  geom_point(
+    data = s_p1,
+    size = 5, 
+    alpha = 0.8,
+    color = "#f1f0ea",
+    aes(
+      y = forcats::fct_rev(question),
+      x = prop_agree
+    )
+  ) +  
+  
+  geom_point(
+    data = s_p2,
+    shape = 21, 
+    size = 4, 
+    alpha = 0.9, 
+    color = "black",
+    position = position_jitter(width = .5, height = 0),
+    aes(
+      y = forcats::fct_rev(question),
+      x = prop_agree, 
+      fill = grouping
+    )
+  ) +  
+  
+  scale_fill_manual(values = c("#d10a0a", "#fd8b45", "#ffd100",
+                               "#52b57f", "#8c52ff", "#19bdd4", "blue")) +
+  
+xlim(0,100)+
+theme_classic() +
+theme(
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background  = element_rect(fill = "transparent", colour = NA)
+)
+
+
+
+
+
+ggplot() + 
+  
+  geom_line(
+    data = s_p1,
+    alpha = 0.5,
+    color = "#b4b4b4",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  )+  
+  
+  geom_point(
+    data = s_p1,
+    size = 6, 
+    alpha = 0.5,
+    color = "black",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) + 
+  
+  geom_point(
+    data = s_p1,
+    size = 5, 
+    alpha = 0.8,
+    color = "#f1f0ea",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) +  
+  
+  geom_point(
+    data = satisfaction_size %>% filter(cat_group != "job"),
     shape = 21, 
     size = 4, 
     alpha = 0.9, 
@@ -47,41 +143,150 @@ geom_point(
     position = position_jitter(width = .5, height = 0),
     aes(
       y = cat_group, 
-      x = prop_agree, 
-      fill = grouping
+      x = prop_agree,
+      fill = group_col
     )
-) +  
+  ) +  
   
-scale_fill_manual(values = c("#d10a0a", "#fd8b45", "#ffd100",
-                               "#52b57f", "#8c52ff", "#19bdd4", "blue")) +
-  
-  
-geom_line(
-  data = s_p1,
-  color = "grey",
-  aes(
-    y = cat_group, 
-    x = prop_agree
-  )
-)+
-  
-geom_point(
-  data = s_p1,
-  size = 4, 
-  alpha = 0.4, 
-  color = "black",
-  position = position_jitter(width = .5, height = 0),
-  aes(
-    y = cat_group, 
-    x = prop_agree
-    )
-) +  
-xlim(0,100)+
-theme_classic() +
-theme(
+  xlim(25,100)+
+  theme_classic() +
+  theme(
     panel.background = element_rect(fill = "transparent", colour = NA),
     plot.background  = element_rect(fill = "transparent", colour = NA)
-)
+  )
+
+
+
+
+
+
+ggplot() + 
+  
+  geom_line(
+    data = s_p1,
+    alpha = 0.5,
+    color = "#b4b4b4",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  )+  
+  
+  geom_point(
+    data = s_p1,
+    size = 6, 
+    alpha = 0.5,
+    color = "black",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) + 
+  
+  geom_point(
+    data = s_p1,
+    size = 5, 
+    alpha = 0.8,
+    color = "#f1f0ea",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) +  
+  
+  geom_point(
+    data = satisfaction_position %>% filter(cat_group != "job"),
+    shape = 21, 
+    size = 4, 
+    alpha = 0.9, 
+    color = "black",
+    position = position_jitter(width = .5, height = 0),
+    aes(
+      y = cat_group, 
+      x = prop_agree,
+      fill = group_col
+    )
+  ) +  
+  
+  xlim(25,100)+
+  theme_classic() +
+  theme(
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background  = element_rect(fill = "transparent", colour = NA)
+  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ggplot() + 
+  
+  geom_line(
+    data = s_p1,
+    alpha = 0.5,
+    color = "#b4b4b4",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  )+  
+  
+  geom_point(
+    data = s_p1,
+    size = 6, 
+    alpha = 0.5,
+    color = "black",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) + 
+  
+  geom_point(
+    data = s_p1,
+    size = 5, 
+    alpha = 0.8,
+    color = "#f1f0ea",
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) +  
+  
+  geom_point(
+    data = satisfaction_agency %>% filter(cat_group != "job"),
+    shape = 21, 
+    size = 4, 
+    alpha = 0.9, 
+    color = "black",
+    fill = "#d10a0a",
+    position = position_jitter(width = .5, height = 0),
+    aes(
+      y = cat_group, 
+      x = prop_agree
+    )
+  ) +  
+  
+  xlim(25,100)+
+  theme_classic() +
+  theme(
+    panel.background = element_rect(fill = "transparent", colour = NA),
+    plot.background  = element_rect(fill = "transparent", colour = NA)
+  )
+
+
+
+
 
 
 
@@ -127,38 +332,23 @@ geom_line(
   ) +  
   
   geom_point(
-    data = s_p1_min,
-    size = 7, 
-    color = "#3e5c58",
+    data = satisfaction_position,
+    shape = 21, 
+    size = 4, 
+    alpha = 0.9, 
+    color = "black",
+    position = position_jitter(width = .5, height = 0),
     aes(
       y = cat_group, 
       x = prop_agree, 
+      fill = group_col
     )
   ) +  
   
-  geom_point(
-    data = s_p1_max,
-    size = 8, 
-    alpha = 1,
-    color = "#3e5c58",
-    aes(
-      y = cat_group, 
-      x = prop_agree
-    )
-  ) + 
+  scale_fill_manual(values = c("#d10a0a", "#fd8b45", "#ffd100",
+                               "#52b57f", "#8c52ff", "#19bdd4", "blue")) + 
   
-  geom_point(
-    data = s_p1_max,
-    size = 7, 
-    alpha = 1,
-    color = "#fbd113",
-    aes(
-      y = cat_group, 
-      x = prop_agree, 
-    )
-  ) +  
-  
-  xlim(50,100)+
+  xlim(25,100)+
   theme_classic() +
   theme(
     panel.background = element_rect(fill = "transparent", colour = NA),
@@ -171,12 +361,12 @@ geom_line(
 
 
 
-ggplot(satisfaction_agency, aes(x = fct_rev(cat_group), y = prop_agree, fill = cat_group)) +
-  facet_wrap(.~agency) + 
+ggplot(satisfaction_position %>% filter(cat_group != "pay & benefits"), aes(x = fct_rev(cat_group), y = prop_agree, fill = cat_group)) +
+  facet_wrap(.~group_col) + 
   
   geom_line(color = "grey")+
-  geom_point(size = 10, alpha = 1, color = "black") +
-  geom_point(shape = 21, size = 9, alpha = 0.9, color = "black") +
+  geom_point(size = 5, alpha = 0.9, color = "black") +
+  geom_point(shape = 21, size = 4, alpha = 0.9, color = "black") +
   scale_fill_manual(values = c("black", "#d10a0a", "#fd8b45", "#ffd100",
                                "#52b57f", "#8c52ff", "#19bdd4", "blue")) +
   ylim(55,100)+
@@ -185,7 +375,7 @@ ggplot(satisfaction_agency, aes(x = fct_rev(cat_group), y = prop_agree, fill = c
     legend.position = "none",
     panel.background = element_rect(fill = "transparent", colour = NA),
     plot.background  = element_rect(fill = "transparent", colour = NA)
-  )
+  ) 
 
 
 #########################################
@@ -212,11 +402,41 @@ diff_input <-
     buffer = 3
   )
 
+###########################
+###########################
+
+state_df <- satisfaction_statewide %>%
+  filter(
+    question == 
+      "s_pay_recat"
+  )
+
+state_lwr <- state_df$ci_lower
+state_upr <- state_df$ci_upper
+
+
+df_subset <- 
+  diff_vs_state(
+    topic_question =  "s_pay_recat",
+    all_df   = satisfaction_all_grps,
+    state_df = satisfaction_statewide,
+    buffer = 3,
+    exclude_groups = "statewide_results"
+  ) 
+
+df_diff <- df_subset %>%
+  filter(
+    is_diff %in% c("diff", "near diff")
+  )
+  
 
 ####################
 pay_satisfaction_p1 <- 
+  
+  
+  
+  
 ggplot() + 
-# Shaded statewide band
 annotate(
     "rect",
     xmin = -Inf, xmax = Inf,
@@ -225,7 +445,7 @@ annotate(
 ) +
 
 geom_errorbar(
-    data = all_pay, 
+    data = df_subset, 
     width = 0.5,
     alpha = 0.5,
     color = "#b4b4b4",
@@ -238,7 +458,7 @@ geom_errorbar(
 ) + 
   
 geom_point(
-    data = all_pay, 
+    data = df_subset, 
     alpha = 0.5,
     aes(
       x = group_col, 
@@ -248,7 +468,7 @@ geom_point(
 ) + 
   
 geom_errorbar(
-    data = diff_state_pay, 
+    data = df_diff, 
     width = 0.5,
     color = "#b4b4b4",
     aes(
@@ -260,7 +480,7 @@ geom_errorbar(
   ) +
   
 geom_point(
-    data = diff_state_pay, 
+    data = df_diff, 
     aes(
       x = group_col, 
       y = prop_agree, 
@@ -279,6 +499,14 @@ theme(
 )
 
   
+
+
+
+
+
+
+
+
 
 ggsave(
   filename = here("_www/plot_exports/pay_satisfaction_p1.png"),

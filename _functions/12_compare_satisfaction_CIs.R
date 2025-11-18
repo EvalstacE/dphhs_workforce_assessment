@@ -9,8 +9,7 @@ diff_vs_state <- function(topic_question,
 
 all_topic <- all_df %>%
     filter(
-      question == topic_question,
-      !group_col %in% exclude_groups
+      question == topic_question
     )
   
   state_topic <- state_df %>%
@@ -38,6 +37,8 @@ topic_df %>%
         ci_upper < state_lwr + buffer     ~ "near diff",
         TRUE                              ~ "not diff"
       )
-  )
+  )%>%
+  
+  filter(!group_col %in% exclude_groups)
 
 }

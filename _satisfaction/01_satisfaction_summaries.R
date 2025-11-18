@@ -13,7 +13,8 @@ satisfaction_size <- rbind(s_agree_by_size, f_props_by_size) %>%
   arrange(size, desc(prop_agree))%>%
   rename(group_col = "size") %>%
   mutate(grouping = "jd_size") %>%
-  relocate(grouping, .before = group_col)
+  relocate(grouping, .before = group_col)%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 
 
@@ -31,7 +32,8 @@ satisfaction_position <- rbind(s_agree_by_position, f_props_by_position) %>%
   arrange(sup_status, desc(prop_agree))%>%
   rename(group_col = "sup_status") %>%
   mutate(grouping = "position_type") %>%
-  relocate(grouping, .before = group_col)
+  relocate(grouping, .before = group_col)%>%
+  order_questions(group_col = cat_group, question_col = question)
   
 
 
@@ -45,14 +47,15 @@ s_position_diffs <- satisfaction_position %>%
   ) %>%
   mutate(
     diff_exec_sup   = abs(Executive - Supervisor),
-    diff_sup_nonsup = abs(Supervisor - `Non-supervisor`)
+    diff_sup_nonsup = abs(Supervisor - `Non-supervisor`),
+    diff_nonsup_exec = abs(Executive - `Non-supervisor`),
   ) %>%
   tidyr::pivot_longer(
     cols = c(`Non-supervisor`, Supervisor, Executive),
     names_to  = "group_col",
     values_to = "prop_agree"
   ) %>%
-  select(question, group_col, diff_exec_sup, diff_sup_nonsup)
+  select(question, group_col, diff_exec_sup, diff_sup_nonsup, diff_nonsup_exec)
 
 #--join diffs back on
 satisfaction_position2 <- satisfaction_position %>%
@@ -64,7 +67,8 @@ satisfaction_position2 <- satisfaction_position %>%
         levels = c("Non-supervisor", "Supervisor", "Executive"), 
         ordered = TRUE
       )
-  )
+  )%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 
 
@@ -104,7 +108,8 @@ s_agency_diffs <- satisfaction_agency %>%
 
 #--join diffs back on
 satisfaction_agency2 <- satisfaction_agency %>%
-  left_join(s_agency_diffs, by = c("question", "group_col"))
+  left_join(s_agency_diffs, by = c("question", "group_col"))%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 
 
@@ -123,7 +128,8 @@ satisfaction_leave <- rbind(s_agree_by_leave, f_props_by_leave) %>%
   arrange(leave_or_retire, desc(prop_agree))%>%
   rename(group_col = "leave_or_retire") %>%
   mutate(grouping = "leave_retire") %>%
-  relocate(grouping, .before = group_col)
+  relocate(grouping, .before = group_col)%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 #--compute diffs by question across position types
 s_leave_diffs <- satisfaction_leave %>%
@@ -146,7 +152,8 @@ s_leave_diffs <- satisfaction_leave %>%
 #--join diffs back on
 satisfaction_leave2 <- satisfaction_leave %>%
   left_join(s_leave_diffs, by = c("question", "group_col")) %>%
-  filter(group_col != "retiring")
+  filter(group_col != "retiring")%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 
 
@@ -164,7 +171,8 @@ satisfaction_satisfy <- rbind(s_agree_by_satisfy, f_props_by_satisfy) %>%
   arrange(satisfied_job, desc(prop_agree))%>%
   rename(group_col = "satisfied_job") %>%
   mutate(grouping = "job_satisfied") %>%
-  relocate(grouping, .before = group_col)
+  relocate(grouping, .before = group_col)%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 #--compute diffs by question between agency type
 s_satisfy_diffs <- satisfaction_satisfy %>% 
@@ -185,7 +193,8 @@ s_satisfy_diffs <- satisfaction_satisfy %>%
 
 #--join diffs back on
 satisfaction_satisfy2 <- satisfaction_satisfy %>%
-  left_join(s_satisfy_diffs, by = c("question", "group_col"))
+  left_join(s_satisfy_diffs, by = c("question", "group_col"))%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 
 
@@ -212,7 +221,8 @@ satisfaction_statewide <- rbind(s_props_statewide, f_props_statewide) %>%
     grouping = "statewide",
     group_col = "statewide_results"
   ) %>%
-  ungroup()
+  ungroup()%>%
+  order_questions(group_col = cat_group, question_col = question)
 
 
 
@@ -228,6 +238,13 @@ satisfaction_all_grps <-
   filter(group_col != "retiring")
 
 
+common_cols <- intersect(colnames(satisfaction_all_grps), colnames(satisfaction_statewide))
+
+satisfaction_all_grps <- bind_rows(
+  select(satisfaction_all_grps, all_of(common_cols)),
+  select(satisfaction_statewide, all_of(common_cols))
+) %>%
+order_questions(group_col = cat_group, question_col = question)
 
 ##--Exported dfs: 
 #write.csv(satisfaction_leave2, "_www/df_exports/satisfaction_df_exports/satisfaction_leave.csv", row.names = FALSE)

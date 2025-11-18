@@ -16,8 +16,15 @@ create_satisfaction_cats <- function(df, category_col = question) {
       ) %>%
         factor(
           levels = c(
-            "job", "voice", "supervisor", "org & team", "balance",
-            "pay & benefits", "treated fairly", "belonging"
+            "job", 
+            "pay & benefits", 
+            "balance",
+            "org & team", 
+            "voice", 
+            "supervisor", 
+            "belonging",
+            "treated fairly"
+
           )
         )
     )
