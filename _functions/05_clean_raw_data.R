@@ -5,7 +5,7 @@ clean_raw_data <- function(df) {
     
   mutate(
     
-      size = factor(size, levels = c("Tribal", "Frontier", "Small", "Medium", "Large"), ordered = TRUE),
+      size = factor(size, levels = c("Frontier", "Small", "Medium", "Large"), ordered = TRUE),
       
       sup_status = case_when(
         str_starts(supervisor_status, "Supervisor") ~ "Supervisor", 

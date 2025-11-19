@@ -41,7 +41,11 @@ summarise_satisfy_props <- function(data, group,
       dplyr::across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100),
       n_agree = round(prop_agree * (n / 100))
     ) %>%
-    dplyr::relocate(n_agree, .after = "n")
+    dplyr::relocate(n_agree, .after = "n") %>%
+    ungroup() %>%
+    mutate(
+      ci_upper = if_else(ci_upper > 100, 100, ci_upper)
+    )
 }
 
 
@@ -78,7 +82,11 @@ summ_agree_overall <- function(data, group,
       ci_lower = prop_agree - 1.96 * se,
       ci_upper = prop_agree + 1.96 * se,
       .groups = "drop"
-    )
+    ) %>%
+    ungroup() %>%
+    mutate(
+      ci_upper = if_else(ci_upper > 100, 100, ci_upper)
+    ) 
 }
 
 
@@ -134,5 +142,9 @@ summarise_freq_props <- function(data, group,
       dplyr::across(c(prop_agree, se, ci_lower, ci_upper), ~ .x * 100),
       n_agree = round(prop_agree * (n / 100))
     ) %>%
-    dplyr::relocate(n_agree, .after = "n")
+    dplyr::relocate(n_agree, .after = "n")%>%
+    ungroup() %>%
+    mutate(
+      ci_upper = if_else(ci_upper > 100, 100, ci_upper)
+    ) 
 }

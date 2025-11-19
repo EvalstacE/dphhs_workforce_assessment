@@ -8,6 +8,7 @@
 s_agree_by_size <- summarise_satisfy_props(data_cleaned, size) 
 f_props_by_size <- summarise_freq_props(data_cleaned, size)
 
+
 satisfaction_size <- rbind(s_agree_by_size, f_props_by_size) %>%
   create_satisfaction_cats() %>%
   arrange(size, desc(prop_agree))%>%
@@ -15,6 +16,52 @@ satisfaction_size <- rbind(s_agree_by_size, f_props_by_size) %>%
   mutate(grouping = "jd_size") %>%
   relocate(grouping, .before = group_col)%>%
   order_questions(group_col = cat_group, question_col = question)
+
+
+# -- compute diffs by question across jurisdiction size
+s_size_diffs <- satisfaction_size %>%
+  select(question, group_col, prop_agree) %>%
+  tidyr::pivot_wider(
+    id_cols    = question,
+    names_from = group_col,
+    values_from = prop_agree
+  ) %>%
+  mutate(
+    diff_frontier_small  = abs(Frontier - Small),
+    diff_frontier_medium = abs(Frontier - Medium),
+    diff_frontier_large  = abs(Frontier - Large),
+    
+    diff_small_medium    = abs(Small - Medium),
+    diff_small_large     = abs(Small - Large),
+    
+    diff_medium_large    = abs(Medium - Large)
+  ) %>%
+  # -- put the size-specific props back into long format
+  tidyr::pivot_longer(
+    cols      = c(Frontier, Small, Medium, Large),
+    names_to  = "group_col",
+    values_to = "prop_agree"
+  ) %>%
+  select(
+    question,
+    group_col,
+    starts_with("diff_")
+  )
+
+
+#--join diffs back on
+satisfaction_size2 <- satisfaction_size %>%
+  left_join(s_size_diffs, by = c("question", "group_col")) %>%
+  mutate(
+    group_col = 
+      factor(
+        group_col, 
+        levels = c("Frontier", "Small", "Medium", "Large"), 
+        ordered = TRUE
+      )
+  )%>%
+  order_questions(group_col = cat_group, question_col = question)
+
 
 
 
@@ -254,5 +301,7 @@ order_questions(group_col = cat_group, question_col = question)
 #write.csv(satisfaction_statewide, "_www/df_exports/satisfaction_df_exports/satisfaction_statewide.csv", row.names = FALSE)
 #write.csv(satisfaction_all_grps, "_www/df_exports/satisfaction_df_exports/satisfaction_all_grps.csv", row.names = FALSE)
 #write.csv(satisfaction_satisfy2, "_www/df_exports/satisfaction_df_exports/satisfaction_job_satisfied.csv", row.names = FALSE)
-  
+#write.csv(satisfaction_size2, "_www/df_exports/satisfaction_df_exports/satisfaction_size2.csv", row.names = FALSE)
+
+
 
