@@ -1,6 +1,7 @@
 ﻿q_type,q_short,cat_group,full_text
 f,f_work_life_balance_recat,balance,I can achieve a healthy balance between my work and life outside of work
 f,f_manage_demands_recat,balance,I can easily manage the demands of my job
+s,s_able_complete_40hr_recat,balance,I am able to complete my work within my normal working hours
 s,s_belonging_agency_recat,belonging,I feel a sense of belonging at my agency
 s,s_belonging_work_unit_recat,belonging,I feel a sense of belonging with my program team
 f,f_love_job_recat,job,I love my job
@@ -9,6 +10,8 @@ f,f_happy_input_recat,voice,I am happy with how much input I have in decisions t
 f,f_voice_concerns_recat,voice,I can voice concerns at work without getting into trouble
 s,s_org_recat,org & team,I am satisfied with my organization
 s,s_work_unit_recat,org & team,I am satisfied with my program team
+s,s_comfort_using_PTO_recat,org & team,I feel comfortable using my PTO
+s,s_agency_mh_policy_support_recat,org & team,My agency implements policies and practices that support my mental wellbeing
 f,f_paid_fairly_recat,pay & benefits,I am pair fairly for the job that I do
 s,s_pay_recat,pay & benefits,I am satisfied with my pay
 s,s_benefits_recat,pay & benefits,I am satisfied with my benefits

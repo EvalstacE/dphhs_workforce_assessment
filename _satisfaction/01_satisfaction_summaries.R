@@ -294,14 +294,14 @@ satisfaction_all_grps <- bind_rows(
 order_questions(group_col = cat_group, question_col = question)
 
 ##--Exported dfs: 
-#write.csv(satisfaction_leave2, "_www/df_exports/satisfaction_df_exports/satisfaction_leave.csv", row.names = FALSE)
-#write.csv(satisfaction_position2, "_www/df_exports/satisfaction_df_exports/satisfaction_position.csv", row.names = FALSE)
-#write.csv(satisfaction_agency2, "_www/df_exports/satisfaction_df_exports/satisfaction_agency.csv", row.names = FALSE)
-#write.csv(satisfaction_size, "_www/df_exports/satisfaction_df_exports/satisfaction_size.csv", row.names = FALSE)
-#write.csv(satisfaction_statewide, "_www/df_exports/satisfaction_df_exports/satisfaction_statewide.csv", row.names = FALSE)
-#write.csv(satisfaction_all_grps, "_www/df_exports/satisfaction_df_exports/satisfaction_all_grps.csv", row.names = FALSE)
-#write.csv(satisfaction_satisfy2, "_www/df_exports/satisfaction_df_exports/satisfaction_job_satisfied.csv", row.names = FALSE)
-#write.csv(satisfaction_size2, "_www/df_exports/satisfaction_df_exports/satisfaction_size2.csv", row.names = FALSE)
+#write.csv(satisfaction_leave2, "_data/df_exports/satisfaction_df_exports/satisfaction_leave.csv", row.names = FALSE)
+#write.csv(satisfaction_position2, "_data/df_exports/satisfaction_df_exports/satisfaction_position.csv", row.names = FALSE)
+#write.csv(satisfaction_agency2, "_data/df_exports/satisfaction_df_exports/satisfaction_agency.csv", row.names = FALSE)
+#write.csv(satisfaction_size, "_data/df_exports/satisfaction_df_exports/satisfaction_size.csv", row.names = FALSE)
+#write.csv(satisfaction_statewide, "_data/df_exports/satisfaction_df_exports/satisfaction_statewide.csv", row.names = FALSE)
+#write.csv(satisfaction_all_grps, "_data/df_exports/satisfaction_df_exports/satisfaction_all_grps.csv", row.names = FALSE)
+#write.csv(satisfaction_satisfy2, "_data/df_exports/satisfaction_df_exports/satisfaction_job_satisfied.csv", row.names = FALSE)
+#write.csv(satisfaction_size2, "_data/df_exports/satisfaction_df_exports/satisfaction_size2.csv", row.names = FALSE)
 
 
 

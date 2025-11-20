@@ -96,7 +96,7 @@ geom_line(
   
 
 geom_point(
-    data = p2,
+    data = p2_min,
     size = 2, 
     alpha = 0.5,
     color = "white",
@@ -108,9 +108,20 @@ geom_point(
   
   
 geom_point(
+    data = p2_max,
+    size = 2, 
+    alpha = 0.5,
+    color = "white",
+    aes(
+      y = forcats::fct_rev(question),
+      x = prop_agree
+    )
+) +    
+  
+geom_point(
     data = diff_all,
     shape = 21, 
-    size = 9, 
+    size = 7, 
     alpha = 1, 
     color = "#3e5c58",
     fill = "#3e5c58",
@@ -123,7 +134,7 @@ geom_point(
 geom_point(
     data = diff_all,
     shape = 21, 
-    size = 8, 
+    size = 6, 
     alpha = 1, 
     color = "#3e5c58",
     fill = "#fcd008",
@@ -190,147 +201,33 @@ ggsave(
 ####################
 ####################
 ####################
+quantile(satisfaction_statewide$prop_agree)
 
+statewide_boxplot <- 
 ggplot() + 
-  
-geom_line(
-    data = p2,
-    alpha = 0.5,
-    linewidth = 5,
-    color = "#f1f0ea",
+  geom_boxplot(
+    data = satisfaction_statewide, 
     aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
+      y = prop_agree
     )
-)+    
-  
-geom_line(
-    data = p2_sig,
-    alpha = 1,
-    linewidth = 5,
-    color = "#f1f0ea",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-)+  
-  
-  
-geom_point(
-    data = p2,
-    size = 3, 
-    alpha = 1,
-    color = "white",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-) + 
-  
-
-  
-geom_point(
-    data = p2,
-    size = 3, 
-    alpha = 0.3,
-    color = "black",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-) +  
-  
-  
-geom_point(
-    data = p2_max,
-    shape = 21, 
-    size = 7, 
-    alpha = 1, 
-    color = "black",
-    fill = "black",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-) + 
-  
-geom_point(
-    data = p2_max,
-    shape = 21, 
-    size = 6, 
-    alpha = 1, 
-    color = "black",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree, 
-      fill = grouping
-    )
-) + 
-  
-  
-geom_point(
-    data = p2_min,
-    shape = 21, 
-    size = 7, 
-    alpha = 1, 
-    color = "black",
-    fill = "black",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-) + 
-  
-geom_point(
-    data = p2_min,
-    shape = 21, 
-    size = 6, 
-    alpha = 1, 
-    color = "black",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree, 
-      fill = grouping
-    )
-) +  
-  
-  
-geom_point(
-    data = all_state,
-    alpha = 1,
-    shape = 24,
-    size = 5,
-    color = "black",
-    fill = "black",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-)+    
-  
-geom_point(
-    data = all_state,
-    alpha = 1,
-    shape = 24,
-    size = 4,
-    color = "black",
-    fill = "white",
-    aes(
-      y = forcats::fct_rev(question),
-      x = prop_agree
-    )
-)+  
-  
-  
-scale_fill_manual(values = c("#95c6ea", "#1f3465", "#6da587", "#fcd008","#a8b09d")) +
-  
-xlim(25,100)+
-theme_classic() +
-theme(
+  ) + 
+  ylim(25, 100) + 
+  theme_classic() +
+  theme(
+    legend.position = "none",
     panel.background = element_rect(fill = "transparent", colour = NA),
-    plot.background  = element_rect(fill = "transparent", colour = NA)
+    plot.background  = element_rect(fill = "transparent", colour = NA),
+  )
+  
+######
+
+ggsave(
+  filename = here("_www/plot_exports/statewide_boxplot.png"),
+  plot = statewide_boxplot,
+  width = 2,
+  height = 10,
+  units = "in",
+  dpi = 900,
+  bg = "transparent"
+  
 )
-
-
-
-

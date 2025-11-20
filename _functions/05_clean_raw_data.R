@@ -96,6 +96,20 @@ clean_raw_data <- function(df) {
           s_job_recat == "Agree" ~ "satisfied with job", 
           TRUE ~ "not satisfied with job"
         )
+    ) %>%
+    
+    mutate(
+      
+      why_staying = 
+        str_to_lower(why_staying) %>% 
+        str_replace_all("\\s*\\([^)]*\\)", "") %>% 
+        str_squish(),
+      
+      leaving_org_reasons = 
+        str_to_lower(leaving_org_reasons) %>% 
+        str_replace_all("\\s*\\([^)]*\\)", "") %>% 
+        str_squish()
+      
     )
   
 }

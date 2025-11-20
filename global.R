@@ -25,6 +25,9 @@ walk(global_function_files, ~ source(.x))
 all_sf <- bring_in_shapefile_list()
 
 
+
 # Bring in and clean demographic data subset
 dem_data <- read.csv(file = here("_data/demographics.csv")) 
-data_cleaned <- clean_raw_data(dem_data)
+#data_cleaned <- clean_raw_data(dem_data)
+#write.csv(data_cleaned, "_data/data_cleaned.csv", row.names = TRUE)
+data_cleaned <- read.csv(file = here("_data/data_cleaned.csv"))
