@@ -1,61 +1,61 @@
-﻿hd,hd_cat,region,total_staff,total_responses
-Carter County Public Health,Frontier,1,2,1
-Daniels County Health Department,Frontier,1,,0
-Fallon County Health Department,Frontier,1,5,4
-Garfield County Health Department,Frontier,1,5,3
-Granite County Health Department,Frontier,4,2,2
-Liberty County Health Department,Frontier,2,0,1
-McCone County Health Department,Frontier,1,4,4
-Meagher County Health Department,Frontier,4,2,2
-Mineral County Health Department,Frontier,5,11,11
-Phillips County Health Department,Frontier,1,,0
-Powder River County Health Department,Frontier,1,2,2
-Prairie County Health Department,Frontier,1,1,1
-Sheridan County Health Department,Frontier,1,,0
-Sweet Grass County Public Health Department,Frontier,3,1,1
-Teton County Health Department,Frontier,2,7,7
-Toole County Health Department,Frontier,2,4,4
-Treasure County Health Department,Frontier,1,4,2
-Wibaux County Health Department,Frontier,1,4,3
-Butte-Silver Bow Health Department,Large,4,25,24
-Cascade City-County Health,Large,2,37,9
-Flathead City-County Health Department,Large,5,64,2
-Gallatin City-County Health Department,Large,4,54,54
-Lake County Public Health,Large,5,10,10
-Lewis and Clark Public Health,Large,4,43,43
-Missoula City-County Health Department,Large,5,90,62
-Ravalli County Public Health,Large,5,5,5
-RiverStone Health,Large,3,381,43
-Big Horn County Health Department,Medium,3,5,5
-Carbon County Public Health,Medium,3,4,1
-Custer County Public Health Department One Health,Medium,1,9,10
-Fergus County Health Department,Medium,3,7,6
-Glacier County Health Department,Medium,2,,1
-Hill County Health Department,Medium,2,7,7
-Jefferson County Health Department,Medium,4,6,6
-Lincoln County Health Department,Medium,5,10,12
-Park County Health Department,Medium,4,,2
-Richland County Health Department,Medium,1,16,16
-Roosevelt County Health Department,Medium,1,7,7
-Sanders County Health Department,Medium,5,3,3
-Anaconda-Deer Lodge County Public Health Department,Small,4,7,6
-Beaverhead County Public Health,Small,4,3,3
-Blaine County Health Department,Small,2,6,4
-Broadwater County Public Health Department,Small,4,4,4
-Central MT Health District Public Health,Small,3,4,2
-Chouteau County Health Department,Small,2,6,6
-Dawson County Health Department,Small,1,15,15
-Madison County Public Health Department,Small,4,,1
-Pondera County Health Department,Small,2,4,4
-Powell County Public Health,Small,4,2,2
-Rosebud County Public Health Department,Small,1,4,4
-Stillwater County Health Department,Small,3,,0
-Valley County Health Department,Small,1,7,7
-Blackfeet Nation Health Services,Tribal,2,8,8
-Crow Tribal Health Department,Tribal,3,,0
-CSKT Health Department,Tribal,5,17,17
-Fort Belknap Tribal Health Department,Tribal,2,,0
-Fort Peck Tribal Health Department,Tribal,1,,1
-Little Shell Tribal Health Department,Tribal,2,36,1
-Northern Cheyenne Board of Health,Tribal,3,,1
-Rocky Boy Health Center,Tribal,2,,0
+﻿hd,location,agency_type,hd_cat,region,total_staff,total_responses
+Anaconda-Deer Lodge County Public Health Department,"46.12462905770423, -112.95361171534006",County Health Department,Small,4,7,6
+Beaverhead County Public Health,"45.21741047919387, -112.63240320795961",County Health Department,Small,4,3,3
+Big Horn County Health Department,"45.7694162544322, -107.61309805774978",County Health Department,Medium,3,5,5
+Blaine County Health Department,"48.591079414570544, -109.22885489815488",County Health Department,Small,2,6,4
+Broadwater County Public Health Department,"46.321539177267, -111.5153393532931",County Health Department,Small,4,4,4
+Butte-Silver Bow Health Department,"45.99864033295278, -112.53553312145458",County Health Department,Large,4,25,24
+Carbon County Public Health,"45.18649082366441, -109.24794172883608",County Health Department,Medium,3,4,1
+Carter County Public Health,"45.88793267572158, -104.54797827174417",County Health Department,Frontier,1,2,1
+Cascade City-County Health,"47.5034243928773, -111.30016475939921",County Health Department,Large,2,37,9
+Central MT Health District Public Health,"47.153695623682296, -110.22224652883499",County Health Department,Medium,3,4,2
+Chouteau County Health Department,"47.81727378722001, -110.67231863760806",County Health Department,Small,2,6,6
+Custer County Public Health Department One Health,"46.40646981476587, -105.85101408767017",County Health Department,Medium,1,9,10
+Daniels County Health Department,"48.79097725548896, -105.41992316009431",County Health Department,Frontier,1,,0
+Dawson County Health Department,"47.10503081350728, -104.714923203265",County Health Department,Small,1,15,15
+Fallon County Health Department,"46.36590406430446, -104.28053140667612",County Health Department,Frontier,1,5,4
+Fergus County Health Department,"47.062588701744055, -109.43108762698989",County Health Department,Medium,3,7,6
+Flathead City-County Health Department,"48.18826014422563, -114.31101971164985",County Health Department,Large,5,64,2
+Gallatin City-County Health Department,"45.67833374530299, -111.03169202514478",County Health Department,Large,4,54,54
+Garfield County Health Department,"47.32387047076254, -106.91253752223082",County Health Department,Frontier,1,5,3
+Glacier County Health Department,"48.62885767482807, -112.31520261164982",County Health Department,Medium,2,,1
+Granite County Health Department,"46.78760185607113, -113.14962059959753",County Health Department,Frontier,4,2,2
+Hill County Health Department,"48.55133644879191, -109.67720076562966",County Health Department,Medium,2,7,7
+Jefferson County Health Department,"46.251731198318474, -112.06857848989013",County Health Department,Medium,4,6,6
+Lake County Public Health,"47.68803053380828, -114.16319362941421",County Health Department,Large,5,10,10
+Lewis and Clark Public Health,"46.58950768863478, -112.00568077358928",County Health Department,Large,4,43,43
+Liberty County Health Department,"48.74590840689197, -110.23079391430733",County Health Department,Frontier,2,0,1
+Lincoln County Health Department,"48.336594897216195, -115.5154071502896",County Health Department,Medium,5,10,12
+Madison County Public Health Department,"45.452435530777436, -112.19479143644905",County Health Department,Small,4,,1
+McCone County Health Department,"47.4192222267232, -105.58093996101016",County Health Department,Frontier,1,4,4
+Meagher County Health Department,"46.54765126236737, -110.90419636164985",County Health Department,Frontier,4,2,2
+Mineral County Health Department,"47.18587880601067, -114.87613276193945",County Health Department,Frontier,5,11,11
+Missoula City-County Health Department,"46.87603848782858, -113.99853809818961",County Health Department,Large,5,90,62
+Park County Health Department,"45.6634280827845, -110.55573218650504",County Health Department,Medium,4,,2
+Phillips County Health Department,"48.3586729184052, -107.87189469630977",County Health Department,Frontier,1,,0
+Pondera County Health Department,"48.1699950296868, -111.94760912698989",County Health Department,Small,2,4,4
+Powder River County Health Department,"45.448683421566706, -105.40704530795963",County Health Department,Frontier,1,2,2
+Powell County Public Health,"46.39203299715907, -112.72097294290916",County Health Department,Small,4,2,2
+Prairie County Health Department,"46.79271296209616, -105.31311260980473",County Health Department,Frontier,1,1,1
+Ravalli County Public Health,"46.244838857069404, -114.15705301591923",County Health Department,Large,5,5,5
+Richland County Health Department,"47.73061447348205, -104.16427954408815",County Health Department,Medium,1,16,16
+RiverStone Health,"45.78285754603307, -108.50111928305584",County Health Department,Large,3,67,43
+Roosevelt County Health Department,"48.0887095663275, -105.63773746009434",County Health Department,Medium,1,7,7
+Rosebud County Public Health Department,"46.253727733070356, -106.68688508557781",County Health Department,Small,1,4,4
+Sanders County Health Department,"47.67993333992258, -115.3120414643473",County Health Department,Medium,5,3,3
+Sheridan County Health Department,"48.76989691315281, -104.5403080845967",County Health Department,Frontier,1,,0
+Stillwater County Health Department,"45.64344173597708, -109.25914383437035",County Health Department,Small,3,,0
+Sweet Grass County Public Health Department,"45.83441177767851, -109.95401088650503",County Health Department,Frontier,3,1,1
+Teton County Health Department,"47.813864668088215, -112.19223153863976",County Health Department,Frontier,2,7,7
+Toole County Health Department,"48.50458131057387, -111.85879877116498",County Health Department,Frontier,2,4,4
+Treasure County Health Department,"46.291853134718316, -107.2333507",County Health Department,Frontier,1,4,2
+Valley County Health Department,"48.19251487384541, -106.63801376931987",County Health Department,Small,1,7,7
+Wibaux County Health Department,"46.985986641574584, -104.18838113863976",County Health Department,Frontier,1,4,3
+Blackfeet Nation Health Services,"48.56651371107014, -113.0191603727483",Tribal Health Department,Medium,2,8,8
+Crow Tribal Health Department,"45.60204702477634, -107.45950805448449",Tribal Health Department,Medium,3,,0
+CSKT Health Department,"47.16597139459922, -114.07670291016125",Tribal Health Department,Medium,5,17,17
+Fort Belknap Tribal Health Department,"48.48248807407242, -108.76636131534005",Tribal Health Department,Small,2,,0
+Fort Peck Tribal Health Department,"48.12378535295426, -105.18470269999999",Tribal Health Department,Small,1,,1
+Little Shell Tribal Health Department,"47.50823144904119, -111.32293462698989",Tribal Health Department,Small,2,36,1
+Northern Cheyenne Board of Health,"45.62889156252311, -106.67057465767003",Tribal Health Department,Medium,3,,1
+Rocky Boy Health Center,"48.29284347766287, -109.89847505767004",Tribal Health Department,Small,2,,0

@@ -7,7 +7,9 @@ bring_in_shapefile_list <- function(folder = "_data/shapefiles") {
     MT_boundary             = "MT_boundary/MT_boundary.shp",
     inverse_MT              = "inverse_MT/inverse_MT.shp",
     MT_counties_centroids   = "MT_counties_centroids/MT_counties_centroids.shp",
-    ampho_regions           = "AMPHO_Regions/AMPHO_Regions.shp"
+    ampho_regions           = "AMPHO_Regions/AMPHO_Regions.shp",
+    tribal_nations          = "TribalNations/TribalNations.shp",
+    mt_hd_pnts              = "mt_hd_pnts/mt_hd_pnts.shp"
   )
   
   purrr::imap(shapefiles, function(file_path, obj_name) {
