@@ -75,3 +75,84 @@ summarize_select_all <- function(df,
 
 
 
+
+
+
+
+summarize_select_all_unique <- function(df,
+                                        group,
+                                        prefix = "pref_",
+                                        na_tokens = c("na","n/a","none","no","not applicable")) {
+  
+  # helper to clean, pivot, and de-duplicate by respondent
+  do_pivot <- function(data) {
+    data %>%
+      tidyr::pivot_longer(
+        cols      = dplyr::starts_with(prefix),
+        names_to  = "column",
+        values_to = "raw"
+      ) %>%
+      dplyr::filter(!is.na(raw), stringr::str_trim(raw) != "") %>%
+      tidyr::separate_rows(raw, sep = ",") %>%
+      dplyr::mutate(
+        response = stringr::str_squish(raw),
+        key      = stringr::str_to_lower(response)
+      ) %>%
+      dplyr::filter(
+        key != "",
+        !key %in% na_tokens
+      ) %>%
+      # key step: each respondent can only contribute once per option
+      dplyr::distinct(respondent_id, column, key, .keep_all = TRUE)
+  }
+  
+  # no grouping
+  if (missing(group)) {
+    df_long <- df %>%
+      dplyr::select(respondent_id, dplyr::starts_with(prefix)) %>%
+      do_pivot()
+    
+    out <- df_long %>%
+      dplyr::group_by(column, key) %>%
+      dplyr::summarise(
+        n        = dplyr::n(),
+        response = dplyr::first(response),
+        .groups  = "drop"
+      ) %>%
+      dplyr::mutate(
+        # denominator is number of unique respondents, not tokens
+        prop = n / dplyr::n_distinct(df$respondent_id)
+      ) %>%
+      dplyr::arrange(column, dplyr::desc(n)) %>%
+      dplyr::select(column, response, n, prop)
+    
+    return(out)
+  }
+  
+  # grouped version: proportions within each group
+  g <- rlang::enquo(group)
+  
+  # denominator per group = number of unique respondents in that group
+  group_sizes <- df %>%
+    dplyr::distinct(!!g, respondent_id) %>%
+    dplyr::count(!!g, name = "group_n")
+  
+  df_long <- df %>%
+    dplyr::select(!!g, respondent_id, dplyr::starts_with(prefix)) %>%
+    do_pivot()
+  
+  out <- df_long %>%
+    dplyr::group_by(!!g, column, key) %>%
+    dplyr::summarise(
+      n        = dplyr::n(),
+      response = dplyr::first(response),
+      .groups  = "drop"
+    ) %>%
+    dplyr::left_join(group_sizes, by = rlang::as_name(g)) %>%
+    dplyr::mutate(prop = n / group_n) %>%
+    dplyr::arrange(!!g, column, dplyr::desc(n)) %>%
+    dplyr::select(!!g, column, response, n, prop)
+  
+  out
+}
+

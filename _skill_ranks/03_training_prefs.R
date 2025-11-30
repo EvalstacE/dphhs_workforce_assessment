@@ -14,6 +14,10 @@ train_attended <- train_prefs_sum %>%
   mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
 
 
+train_attended_unique <- summarize_select_all_unique(train_prefs_df, prefix = "pref_train_recat")%>%
+  mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
+
+
 other_train_attended <- train_others %>%
   filter(column == "pref_train_other_recat") %>%
   mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
@@ -47,11 +51,11 @@ train_locs_rgn <- summarize_select_all(df = train_prefs_df, group = region, pref
   )
 
 
-#write.csv(format_prefs, "_data/df_exports/format_prefs.csv", row.names = FALSE)
-#write.csv(train_barriers, "_data/df_exports/train_barriers.csv", row.names = FALSE)
-#write.csv(train_locs_rgn, "_data/df_exports/train_locs_rgn.csv", row.names = FALSE)
-#write.csv(train_locs_all, "_data/df_exports/train_locs_all.csv", row.names = FALSE)
-#write.csv(train_attended, "_data/df_exports/train_attended.csv", row.names = FALSE)
-#write.csv(other_train_attended, "_data/df_exports/other_train_attended.csv", row.names = FALSE)
-
+#write.csv(format_prefs, "_data/df_exports/training_prefs/format_prefs.csv", row.names = FALSE)
+#write.csv(train_barriers, "_data/df_exports/training_prefs/train_barriers.csv", row.names = FALSE)
+#write.csv(train_locs_rgn, "_data/df_exports/training_prefs/train_locs_rgn.csv", row.names = FALSE)
+#write.csv(train_locs_all, "_data/df_exports/training_prefs/train_locs_all.csv", row.names = FALSE)
+#write.csv(train_attended, "_data/df_exports/training_prefs/train_attended.csv", row.names = FALSE)
+#write.csv(other_train_attended, "_data/df_exports/training_prefs/other_train_attended.csv", row.names = FALSE)
+#write.csv(train_attended_unique, "_data/df_exports/training_prefs/train_attended_unique.csv", row.names = FALSE)
 

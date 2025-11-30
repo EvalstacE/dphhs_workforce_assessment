@@ -34,4 +34,5 @@ all_sf <- bring_in_shapefile_list()
 dem_data <- read.csv(file = here("_data/demographics.csv")) 
 #data_cleaned <- clean_raw_data(dem_data)
 #write.csv(data_cleaned, "_data/data_cleaned.csv", row.names = TRUE)
-data_cleaned <- read.csv(file = here("_data/data_cleaned.csv"))
+data_cleaned <- read.csv(file = here("_data/data_cleaned.csv"))%>%
+  enforce_cat_factors(sup_col = sup_status, size_col = size)

@@ -101,6 +101,35 @@ region_map <-
 
 
 
+region_map_blank <- 
+  ggplot() +  
+  geom_sf(data = regions,  color = NA, fill = rgn_fill) + 
+  
+  as_reference(geom_sf(data = r1, color = rgn_blur, fill = NA,linewidth = ln_wdth), 
+               id = "r1") +
+  as_reference(geom_sf(data = r2, color = rgn_blur, fill = NA,linewidth = ln_wdth),
+               id = "r2") +
+  as_reference(geom_sf(data = r3, color = rgn_blur, fill = NA,linewidth = ln_wdth),
+               id = "r3") +
+  as_reference(geom_sf(data = r4, color = rgn_blur, fill = NA,linewidth = ln_wdth),
+               id = "r4") +
+  as_reference(geom_sf(data = r5, color = rgn_blur, fill = NA,linewidth = ln_wdth),
+               id = "r5") +
+  
+  with_blur("r1", sigma = sgma) +
+  with_blur("r2", sigma = sgma) +
+  with_blur("r3", sigma = sgma) +
+  with_blur("r4", sigma = sgma) +
+  with_blur("r5", sigma = sgma) +
+  
+  geom_sf(data = regions, fill = NA, color = rgn_line, linewidth = 0.8) + 
+  geom_sf(data = tribes, fill = alpha("#7cbdeb", 1), color = cnty_line) + 
+  
+  theme_void() + 
+  theme(legend.position = "none")
+
+
+
 ######################
 ######################
 ######################
@@ -227,8 +256,8 @@ m_lg_hds
 
 ##################
 ggsave(
-  filename = here("_www/map_exports/m_lg_hds.png"),
-  plot = m_lg_hds,
+  filename = here("_www/map_exports/region_map_blank.png"),
+  plot = region_map_blank,
   width = 12, 
   height = 8,
   units = "in",

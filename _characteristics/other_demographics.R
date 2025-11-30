@@ -10,6 +10,14 @@ sex_position_stats <- summarise_group_props(
 )
 
 
+size_sum <- data_cleaned %>%
+  group_by(size) %>%
+  summarise(
+    n_size = n(), 
+    size_prop = 100*n_size/448,
+    .groups = "drop"
+  )
+
 str(sex_position_stats)
 
 
