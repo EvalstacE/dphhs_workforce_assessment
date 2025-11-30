@@ -37,10 +37,9 @@ cred_list_sum <- summarize_select_all(df = cred_list, prefix = "current_credenti
 
 
 
-
-
-
-
+##################################
+##   credentials by subgroups   ##
+##################################
 
 cred_sup <- two_group_count_prop(cred_all, sup_status, cred_recat)
 ###-- no sig. differences
@@ -102,7 +101,7 @@ make_prop_plot(
 )
 
 
-
+##-- interested in credential list:
 
 cred_int_list <- cred_all %>%
   select(credentials_interest_list) %>%
@@ -112,6 +111,14 @@ cred_int_sum <- summarize_select_all(df = cred_int_list, prefix = "credentials_i
   mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
 
 
+##-- "others" listed:
+
+cred_oth_int_list <- cred_all %>%
+  select(credentials_interest_list_other) %>%
+  filter(!is.na(credentials_interest_list_other))
+
+cred_oth_int_sum <- summarize_select_all(df = cred_oth_int_list, prefix = "credentials_interest_list_other")%>%
+  mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
 
 
 
@@ -128,27 +135,14 @@ degree_size_stats <- summarise_group_props(data_cleaned, size, degree_recat) %>%
   enforce_cat_factors(size_col =  size)
 
 
-ggplot(
-  data = degree_size_stats %>% filter(degree_recat == "Bachelors or higher"), 
-  aes(x = degree_recat, y = prop, color = size)
-  ) +
-  
-  facet_wrap(.~size, nrow = 1) + 
-  geom_point() +
-  geom_errorbar(
-    aes(ymin = ci_lower, ymax = ci_upper),
-    width = 0.1
-  ) +
-  scale_y_continuous(
-    name   = "Percent",
-    labels = scales::percent_format(scale = 1)
-  ) +
-  ylim(0,100) + 
-  theme_classic()+
-  theme(
-    axis.text.x = element_blank(),
-    legend.position = "none"
-  )
+make_prop_plot(
+  degree_size_stats,
+  filter_col   = degree_recat,
+  filter_value = "Bachelors or higher",
+  x_var        = size
+)
+
+
 
 
 
@@ -191,13 +185,6 @@ degree_sum <- degree_sum_sup1 %>%
 
 
 
-creds_df_sum <- summarize_select_all(df = creds_df, prefix = "degrees")%>%
-  mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
-
-
-
-
-
 ###########################################
 ###########################################
 ###                                     ###
@@ -207,17 +194,16 @@ creds_df_sum <- summarize_select_all(df = creds_df, prefix = "degrees")%>%
 ###########################################
 
 
-creds_high_df <- creds_df %>%
+creds_high_df <- cred_all %>%
   filter(degree_recat == "Bachelors or higher") %>%
   mutate(
-    degrees = str_remove_all(degrees, "High school or equivalent,")
-  )
+    degrees = str_remove_all(Degrees, "High school or equivalent,")
+  ) %>%
+  select(region, size, sup_status, Degrees)
 
 
 creds_degree_sum <- summarize_select_all(df = creds_high_df, prefix = "degrees")%>%
   mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
-
-
 
 
 
