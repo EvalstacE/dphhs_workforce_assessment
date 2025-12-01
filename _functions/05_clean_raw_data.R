@@ -108,7 +108,11 @@ clean_raw_data <- function(df) {
       leaving_org_reasons = 
         str_to_lower(leaving_org_reasons) %>% 
         str_replace_all("\\s*\\([^)]*\\)", "") %>% 
-        str_squish()
+        str_squish(),
+      
+      leave_retire2 = if_else(
+        leave_or_retire %in% c("leaving not retiring", "retiring"), 
+        "leaving OR retiring", "staying")
       
     )
   

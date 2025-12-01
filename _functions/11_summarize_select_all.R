@@ -77,14 +77,14 @@ summarize_select_all <- function(df,
 
 
 
-
-
 summarize_select_all_unique <- function(df,
                                         group,
+                                        respondent = respondent_id,
                                         prefix = "pref_",
                                         na_tokens = c("na","n/a","none","no","not applicable")) {
   
-  # helper to clean, pivot, and de-duplicate by respondent
+  r_id <- rlang::enquo(respondent)
+  
   do_pivot <- function(data) {
     data %>%
       tidyr::pivot_longer(
@@ -102,14 +102,16 @@ summarize_select_all_unique <- function(df,
         key != "",
         !key %in% na_tokens
       ) %>%
-      # key step: each respondent can only contribute once per option
-      dplyr::distinct(respondent_id, column, key, .keep_all = TRUE)
+      # key step: each respondent contributes only once per option
+      dplyr::distinct(!!r_id, column, key, .keep_all = TRUE)
   }
   
-  # no grouping
+  # ----------------------------------------------------------
+  # NO GROUPING VERSION
+  # ----------------------------------------------------------
   if (missing(group)) {
     df_long <- df %>%
-      dplyr::select(respondent_id, dplyr::starts_with(prefix)) %>%
+      dplyr::select(!!r_id, dplyr::starts_with(prefix)) %>%
       do_pivot()
     
     out <- df_long %>%
@@ -120,8 +122,7 @@ summarize_select_all_unique <- function(df,
         .groups  = "drop"
       ) %>%
       dplyr::mutate(
-        # denominator is number of unique respondents, not tokens
-        prop = n / dplyr::n_distinct(df$respondent_id)
+        prop = n / dplyr::n_distinct(df %>% dplyr::pull(!!r_id))
       ) %>%
       dplyr::arrange(column, dplyr::desc(n)) %>%
       dplyr::select(column, response, n, prop)
@@ -129,16 +130,18 @@ summarize_select_all_unique <- function(df,
     return(out)
   }
   
-  # grouped version: proportions within each group
+  # ----------------------------------------------------------
+  # GROUPED VERSION
+  # ----------------------------------------------------------
   g <- rlang::enquo(group)
   
-  # denominator per group = number of unique respondents in that group
+  # denominator per group = unique respondents per group
   group_sizes <- df %>%
-    dplyr::distinct(!!g, respondent_id) %>%
+    dplyr::distinct(!!g, !!r_id) %>%
     dplyr::count(!!g, name = "group_n")
   
   df_long <- df %>%
-    dplyr::select(!!g, respondent_id, dplyr::starts_with(prefix)) %>%
+    dplyr::select(!!g, !!r_id, dplyr::starts_with(prefix)) %>%
     do_pivot()
   
   out <- df_long %>%
@@ -155,4 +158,3 @@ summarize_select_all_unique <- function(df,
   
   out
 }
-

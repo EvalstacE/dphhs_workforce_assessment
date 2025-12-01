@@ -11,7 +11,7 @@ cred_all <- read.csv(file = here("_data/credentials_df.csv"))%>%
 
 ##-- pre-processed and exported:
 #cred_all <- data_cleaned %>%
-  #select(region, size, sup_status, contains(c("credentials", "degrees", "degree"))) %>%
+  #select(resp_id, region, size, sup_status, contains(c("credentials", "degrees", "degree"))) %>%
   #mutate(cred_recat = if_else(current_credentials == "Not formally certified", "Not formally certified", "certified")) %>%
   #relocate(cred_recat, .after = current_credentials)
 
@@ -199,12 +199,19 @@ creds_high_df <- cred_all %>%
   mutate(
     degrees = str_remove_all(Degrees, "High school or equivalent,")
   ) %>%
-  select(region, size, sup_status, Degrees)
+  select(resp_id, region, size, sup_status, Degrees, degree_recat, highest_degree)
+
+masters_sum <- creds_high_df %>%
+  group_by(highest_degree) %>%
+  summarise(
+    cnt_ms = n(), 
+    ms_prop = 100*cnt_ms/297,
+    .groups = "drop"
+  )
 
 
 creds_degree_sum <- summarize_select_all(df = creds_high_df, prefix = "degrees")%>%
   mutate(pref_label = paste0(round(prop*100),"%", " ", "(", n, ")"))
-
 
 
 

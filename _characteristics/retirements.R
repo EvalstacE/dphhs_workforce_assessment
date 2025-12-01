@@ -15,25 +15,47 @@ make_prop_plot(
 )
 
 
-retire_leave_sup <- data_cleaned %>%
-  select(region, size, sup_status, retire_recat, leave_or_retire) %>%
-  mutate(
-    leave_retire2 = if_else(
-      leave_or_retire %in% c("leaving not retiring", "retiring"), 
-             "leaving OR retiring", "staying")
-         )
+retire_leave_df <- data_cleaned %>%
+  select(region, size, sup_status, retire_recat, leave_or_retire, leave_retire2, max_yrs_cat) 
+
+leave_retire_all <- retire_leave_df %>%
+  filter(leave_retire2 == "leaving OR retiring")
   
 
 retire_leave_sup_stats <- 
-  summarise_group_props(retire_leave_sup, sup_status, leave_retire2)
+  summarise_group_props(retire_leave_df, sup_status, leave_retire2,
+                        rename_cols = TRUE)
 
 
 retire_leave_size_stats <- 
-  summarise_group_props(retire_leave_sup, size, leave_retire2)
+  summarise_group_props(retire_leave_df, size, leave_retire2,
+                        rename_cols = TRUE)
 
 
 retire_leave_region_stats <- 
-  summarise_group_props(retire_leave_sup, region, leave_retire2)
+  summarise_group_props(retire_leave_df, region, leave_retire2, 
+                        rename_cols = TRUE)
+
+
+retire_leave_experience <-   
+  summarise_group_props(retire_leave_df, max_yrs_cat, leave_retire2, rename_cols = TRUE) %>%
+  filter(category == "leaving OR retiring")
+  
+
+
+retire_leave_group_stats <- 
+  rbind(retire_leave_region_stats, retire_leave_size_stats, retire_leave_sup_stats) %>%
+  filter(category == "leaving OR retiring")
+
+
+retire_leave_sum <- retire_leave_group_stats %>%
+  group_by(group) %>%
+  summarise(
+    avg_prop = mean(prop), 
+    .groups = "drop"
+  )
+
+
 
 
 
